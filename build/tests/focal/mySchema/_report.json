@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.focal.mySchema - My Schema",
   "bblockName": "My Schema",
   "bblockId": "ogc.focal.mySchema",
-  "generated": "2026-04-09T12:29:09.140111+00:00",
+  "generated": "2026-04-09T12:41:05.852974+00:00",
   "result": true,
   "items": [
     {
@@ -47,11 +47,11 @@
             },
             {
               "op": "ttl-create",
-              "empty": true,
+              "empty": false,
               "filename": "rules-fail.ttl",
-              "size": 0,
-              "isError": true,
-              "message": "**Empty** output Turtle rules-fail.ttl created"
+              "size": 1,
+              "isError": false,
+              "message": "Output Turtle rules-fail.ttl created"
             }
           ]
         },
@@ -65,7 +65,30 @@
               "exception": "ValidationError",
               "errorMessage": "'LT' is a required property",
               "isError": true,
-              "message": "ValidationError: 'LT' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'My example schema',\n     'properties': {'CHS': {'type': 'number'},\n                    'DS_OPRL': {'type': 'number'},\n                    'ID1': {'type': 'number'},\n                    'LES_OBL': {'type': 'number'},\n                    'LO_CAST': {'type': 'string'},\n                    'LT': {'type': 'string',\n                           'x-jsonld-base': 'https://w3id.org/ogc/hosted/focal/lt/',\n                           'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniTyp',\n                           'x-jsonld-type': '@id'},\n                    'OVER_T': {'type': 'string'},\n                    'PCHS': {'type': 'string'},\n                    'PLOCHA': {'type': 'number'},\n                    'ROK_MAP': {'type': 'number'},\n                    'SLT': {'type': 'string'},\n                    'UDRZBA': {'type': 'number'},\n                    'ZADOST': {'type': 'string'},\n                    'ZMENA': {'type': 'string'}},\n     'required': ['LT'],\n     'type': 'object',\n     'x-jsonld-prefixes': {'focal-prop': 'https://w3id.org/ogc/hosted/focal/properties/'}}\n\nOn instance:\n    {'CHS': 25,\n     'DS_OPRL': 2025,\n     'ID1': 128301,\n     'LES_OBL': 8,\n     'LO_CAST': 'a',\n     'OVER_T': 'NE',\n     'PCHS': '25a',\n     'PLOCHA': 1224.24963,\n     'ROK_MAP': 2015,\n     'SLT': '2S',\n     'UDRZBA': 2022,\n     'ZADOST': '-',\n     'ZMENA': 'Uveden\u00ed do souladu s KN'}"
+              "message": "ValidationError: 'LT' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'My example schema',\n     'properties': {'CHS': {'type': 'number'},\n                    'DS_OPRL': {'type': 'number'},\n                    'ID1': {'type': 'number'},\n                    'LES_OBL': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOblast'},\n                    'LO_CAST': {'type': 'string'},\n                    'LT': {'type': 'string',\n                           'x-jsonld-base': 'https://w3id.org/ogc/hosted/focal/lt/',\n                           'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniTyp',\n                           'x-jsonld-type': '@id'},\n                    'OVER_T': {'type': 'string'},\n                    'PCHS': {'type': 'string'},\n                    'PLOCHA': {'type': 'number'},\n                    'ROK_MAP': {'type': 'number'},\n                    'SLT': {'type': 'string'},\n                    'UDRZBA': {'type': 'number'},\n                    'ZADOST': {'type': 'string'},\n                    'ZMENA': {'type': 'string'}},\n     'required': ['LT'],\n     'type': 'object',\n     'x-jsonld-prefixes': {'focal-prop': 'https://w3id.org/ogc/hosted/focal/properties/'}}\n\nOn instance:\n    {'CHS': 25,\n     'DS_OPRL': 2025,\n     'ID1': 128301,\n     'LES_OBL': 8,\n     'LO_CAST': 'a',\n     'OVER_T': 'NE',\n     'PCHS': '25a',\n     'PLOCHA': 1224.24963,\n     'ROK_MAP': 2015,\n     'SLT': '2S',\n     'UDRZBA': 2022,\n     'ZADOST': '-',\n     'ZMENA': 'Uveden\u00ed do souladu s KN'}"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/mySchema/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/mySchema/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/mySchema/rules.shacl",
+              "focusNodes": {
+                "<https://www.ogc.org/rules/template/#testValues>": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
             }
           ]
         }
@@ -106,7 +129,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 1,
+              "size": 2,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }

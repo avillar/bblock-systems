@@ -1,6 +1,6 @@
 path	@id	schema
 /LT	https://w3id.org/ogc/hosted/focal/properties/lesniTyp	/github/workspace/build/annotated/focal/mySchema/schema.yaml
-/LES_OBL		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/LES_OBL	https://w3id.org/ogc/hosted/focal/properties/lesniOblast	/github/workspace/build/annotated/focal/mySchema/schema.yaml
 /LO_CAST		/github/workspace/build/annotated/focal/mySchema/schema.yaml
 /UDRZBA		/github/workspace/build/annotated/focal/mySchema/schema.yaml
 /ZMENA		/github/workspace/build/annotated/focal/mySchema/schema.yaml

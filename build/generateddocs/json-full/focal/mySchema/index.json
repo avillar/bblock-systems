@@ -62,7 +62,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .\n\n[] focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> .\n\n",
+          "code": "@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] focal-prop:lesniOblast 8 ;\n    focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> .\n\n",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_1_1.ttl"
         }
       ]
@@ -89,7 +89,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: My example schema\ntype: object\nproperties:\n  LT:\n    type: string\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniTyp\n    x-jsonld-type: '@id'\n    x-jsonld-base: https://w3id.org/ogc/hosted/focal/lt/\n  LES_OBL:\n    type: number\n  LO_CAST:\n    type: string\n  UDRZBA:\n    type: number\n  ZMENA:\n    type: string\n  ZADOST:\n    type: string\n  CHS:\n    type: number\n  PCHS:\n    type: string\n  OVER_T:\n    type: string\n  ROK_MAP:\n    type: number\n  ID1:\n    type: number\n  SLT:\n    type: string\n  PLOCHA:\n    type: number\n  DS_OPRL:\n    type: number\nrequired:\n- LT\nx-jsonld-prefixes:\n  focal-prop: https://w3id.org/ogc/hosted/focal/properties/\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: My example schema\ntype: object\nproperties:\n  LT:\n    type: string\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniTyp\n    x-jsonld-type: '@id'\n    x-jsonld-base: https://w3id.org/ogc/hosted/focal/lt/\n  LES_OBL:\n    type: number\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniOblast\n  LO_CAST:\n    type: string\n  UDRZBA:\n    type: number\n  ZMENA:\n    type: string\n  ZADOST:\n    type: string\n  CHS:\n    type: number\n  PCHS:\n    type: string\n  OVER_T:\n    type: string\n  ROK_MAP:\n    type: number\n  ID1:\n    type: number\n  SLT:\n    type: string\n  PLOCHA:\n    type: number\n  DS_OPRL:\n    type: number\nrequired:\n- LT\nx-jsonld-prefixes:\n  focal-prop: https://w3id.org/ogc/hosted/focal/properties/\n",
   "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
   "gitPath": "_sources/mySchema"
 }

@@ -52,7 +52,7 @@ path	@id	schema
 /links/title	http://www.w3.org/2000/01/rdf-schema#label	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
 /links/length	http://purl.org/dc/terms/extent	https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
 /properties/LT	https://w3id.org/ogc/hosted/focal/properties/lesniTyp	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
-/properties/LES_OBL		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
+/properties/LES_OBL	https://w3id.org/ogc/hosted/focal/properties/lesniOblast	https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
 /properties/LO_CAST		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
 /properties/UDRZBA		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml
 /properties/ZMENA		https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml

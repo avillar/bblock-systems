@@ -1,5 +1,5 @@
 Validation report for ogc.focal.myFeature - Custom Feature
-Generated 2026-04-09T12:29:09.885466+00:00
+Generated 2026-04-09T12:41:06.506668+00:00
 === Files ===
 Using example_1_2.yaml from examples
 === End Files ===
@@ -15,7 +15,8 @@ Failed validating 'required' in schema[0]['allOf'][1]['properties']['properties'
      'properties': {'CHS': {'type': 'number'},
                     'DS_OPRL': {'type': 'number'},
                     'ID1': {'type': 'number'},
-                    'LES_OBL': {'type': 'number'},
+                    'LES_OBL': {'type': 'number',
+                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOblast'},
                     'LO_CAST': {'type': 'string'},
                     'LT': {'type': 'string',
                            'x-jsonld-base': 'https://w3id.org/ogc/hosted/focal/lt/',

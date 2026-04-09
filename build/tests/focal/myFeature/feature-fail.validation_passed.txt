@@ -1,5 +1,5 @@
 Validation report for ogc.focal.myFeature - Custom Feature
-Generated 2026-04-09T12:29:09.653952+00:00
+Generated 2026-04-09T12:41:06.272606+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
@@ -24,23 +24,23 @@ On instance['type']:
 === End JSON Schema ===
 
 === SHACL ===
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: _:Nbe636c7fa9ca482a9d187311f00c1f3c,_:Nf2abd29899dc4ec294fbfb5eed1e0711,_:N36ba0199202b4aa98b38adb546f0d43e,_:N827a8ca8ed504b46bc08394e721fbc18,_:N3b5f949cb59c4bd598d1960723f73f76,_:N54d81dcebaaa490c9819cb0b73c118ec,_:Ne72dfea954d04890b52c0c9b58abff68,_:Nf3cd35c8d0ba4342a78bb07a714f648e,_:N526e5c824c084367a7981fbef4e52fa5,_:N555523a3c2cc4a238b8f86f5d98bb4b3,_:Nf1857032ba084588a4ca78299d1b9528,_:Nb15d9a61da8e4cd69b66b88e2aa41daf,_:N96748ef8c0184f5e8bb91d85e93dc0ee
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:LinkShape: *none*
-
 Validation result for _sources/mySchema/rules.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/mySchema/rules.shacl:
  - Shape <https://www.ogc.org/rules/template/#testValues>: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:FeatureShape: _:N361d915442da4f92ba8448704f6d78ad,_:N34db93d1feec420dbc922bad71340408,_:N52b28a9a6d9e48dcafb3a674c739ac75,_:N9e238b12cc3048b492c6c61867f5c34c,_:N0a93a1ab9f514d43a3eb05b5164a2da6,_:N0703a50330094c999eae5668508abd65,_:N72f72809a8a143cdb575e273e02fd964,_:N7aa44702910a49868066bd8936a5efab,_:Nfa57f68b8bc14fe6b14d43ce1629bcfc,_:Nf04035d203c74b7fa85ddd73a122a0cb,_:N74d507dc2f8b4a5099a80462f47fba8d,_:N3f7b6d8ab121426faa742b2cf4c14711,_:Nee09eeb33af14005ac11332a98465544
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 === End SHACL ===
 

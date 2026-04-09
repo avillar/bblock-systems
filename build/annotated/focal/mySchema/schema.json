@@ -10,7 +10,8 @@
       "x-jsonld-base": "https://w3id.org/ogc/hosted/focal/lt/"
     },
     "LES_OBL": {
-      "type": "number"
+      "type": "number",
+      "x-jsonld-id": "https://w3id.org/ogc/hosted/focal/properties/lesniOblast"
     },
     "LO_CAST": {
       "type": "string"

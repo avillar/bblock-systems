@@ -61,6 +61,7 @@
       "@id": "focal-prop:lesniTyp",
       "@type": "@id"
     },
+    "LES_OBL": "focal-prop:lesniOblast",
     "@version": 1.1
   }
 }

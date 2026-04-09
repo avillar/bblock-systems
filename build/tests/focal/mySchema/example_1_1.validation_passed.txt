@@ -1,5 +1,5 @@
 Validation report for ogc.focal.mySchema - My Schema
-Generated 2026-04-09T12:29:09.139563+00:00
+Generated 2026-04-09T12:41:05.852387+00:00
 === Files ===
 Using example.json from examples
 JSON-LD context is present - uplifting

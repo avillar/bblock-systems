@@ -73,8 +73,10 @@ In **Markdown** format.
 #### ttl
 ```ttl
 @prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> .
+[] focal-prop:lesniOblast 8 ;
+    focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> .
 
 
 ```
@@ -111,6 +113,7 @@ properties:
     x-jsonld-base: https://w3id.org/ogc/hosted/focal/lt/
   LES_OBL:
     type: number
+    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniOblast
   LO_CAST:
     type: string
   UDRZBA:
@@ -160,6 +163,7 @@ Links to the schema:
       "@id": "focal-prop:lesniTyp",
       "@type": "@id"
     },
+    "LES_OBL": "focal-prop:lesniOblast",
     "focal-prop": "https://w3id.org/ogc/hosted/focal/properties/",
     "@version": 1.1
   }

@@ -64,7 +64,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-04-09T12:29:09.904505+00:00</small>
+            <small class="datetime">Generated at 2026-04-09T12:41:06.527138+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 2 / 3 (66.67%)
                 </p>
@@ -144,7 +144,7 @@
                                                                     <div class="font-monospace entry-message section-files ">Using rules-fail.json from test resources</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD rules-fail.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files text-danger">**Empty** output Turtle rules-fail.ttl created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle rules-fail.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;LT&#x27; is a required property
 
@@ -154,7 +154,8 @@ Failed validating &#x27;required&#x27; in schema:
      &#x27;properties&#x27;: {&#x27;CHS&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
                     &#x27;DS_OPRL&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
                     &#x27;ID1&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
-                    &#x27;LES_OBL&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
+                    &#x27;LES_OBL&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;,
+                                &#x27;x-jsonld-id&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/properties/lesniOblast&#x27;},
                     &#x27;LO_CAST&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;LT&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
                            &#x27;x-jsonld-base&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/lt/&#x27;,
@@ -186,6 +187,14 @@ On instance:
      &#x27;UDRZBA&#x27;: 2022,
      &#x27;ZADOST&#x27;: &#x27;-&#x27;,
      &#x27;ZMENA&#x27;: &#x27;Uvedení do souladu s KN&#x27;}</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/rules.shacl:
+ - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -289,23 +298,23 @@ Failed validating &#x27;enum&#x27; in schema[0][&#x27;allOf&#x27;][0][&#x27;allO
 On instance[&#x27;type&#x27;]:
     &#x27;FeatureCollection&#x27;</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: _:Nbe636c7fa9ca482a9d187311f00c1f3c,_:Nf2abd29899dc4ec294fbfb5eed1e0711,_:N36ba0199202b4aa98b38adb546f0d43e,_:N827a8ca8ed504b46bc08394e721fbc18,_:N3b5f949cb59c4bd598d1960723f73f76,_:N54d81dcebaaa490c9819cb0b73c118ec,_:Ne72dfea954d04890b52c0c9b58abff68,_:Nf3cd35c8d0ba4342a78bb07a714f648e,_:N526e5c824c084367a7981fbef4e52fa5,_:N555523a3c2cc4a238b8f86f5d98bb4b3,_:Nf1857032ba084588a4ca78299d1b9528,_:Nb15d9a61da8e4cd69b66b88e2aa41daf,_:N96748ef8c0184f5e8bb91d85e93dc0ee
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:LinkShape: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/rules.shacl:
  - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:FeatureShape: _:N361d915442da4f92ba8448704f6d78ad,_:N34db93d1feec420dbc922bad71340408,_:N52b28a9a6d9e48dcafb3a674c739ac75,_:N9e238b12cc3048b492c6c61867f5c34c,_:N0a93a1ab9f514d43a3eb05b5164a2da6,_:N0703a50330094c999eae5668508abd65,_:N72f72809a8a143cdb575e273e02fd964,_:N7aa44702910a49868066bd8936a5efab,_:Nfa57f68b8bc14fe6b14d43ce1629bcfc,_:Nf04035d203c74b7fa85ddd73a122a0cb,_:N74d507dc2f8b4a5099a80462f47fba8d,_:N3f7b6d8ab121426faa742b2cf4c14711,_:Nee09eeb33af14005ac11332a98465544
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -344,23 +353,23 @@ Failed validating &#x27;enum&#x27; in schema[0][&#x27;allOf&#x27;][0][&#x27;allO
 On instance[&#x27;type&#x27;]:
     &#x27;FeatureCollection&#x27;</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: _:N99ec525974d3452c99268d6a0f86131d,_:N5cac7a584a604c5d93ffdc461d683b1c,_:N879e038ce6844cc0bae91782dad4daab,_:N3b396d872d2247d192c1213e4663d4da,_:Nbbc6533aed304eee95555f3faf48e569,_:N40fca98f851c43c9a9265046d572afbb,_:Na972c8ba971343d9974c9c908d52677f,_:N26fb04f0726d4429ba2f2f34d7cc8edd,_:N475de109016b4aa0b7d91293ea6e46ab,_:Ne36dfa5328f6407ba62daa8defc6c09d,_:Nbe1bbd5fa1ef47f8b24a338099d92bab,_:Nfbbed0573635450f8fd8e14122aed808,_:Ndf099eeab30845bdb93bbfaa137d6424
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:LinkShape: *none*
-</div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/rules.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/rules.shacl:
  - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:FeatureShape: _:Nc53aa5b847284f45a38db9d224fb8572,_:Nb88db268193248f990e2b74036668c12,_:N92d2eb6d1ca34f93add8ae793471e025,_:N45844d2600034513b44cb20b8881a1c1,_:N1f12072022e44b1a9190190dcbaa2674,_:Ned4e767488b540088cf819eb22b4e5cf,_:N5188668b406d43a4b8a66395413f030a,_:Nbbaff1b98aa04444a51a708be610c93b,_:N66c443918f5848f3a063f4744110b49e,_:Ne433455498b24ebeb55f45176b9ba9f3,_:Na1cedb2794e249afa06d8e3500385a81,_:N4da242dca8b04d339ffe9f4299d033b4,_:Neb1fc290d6c4450996e347670e6a935d
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
@@ -396,7 +405,8 @@ Failed validating &#x27;required&#x27; in schema[0][&#x27;allOf&#x27;][1][&#x27;
      &#x27;properties&#x27;: {&#x27;CHS&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
                     &#x27;DS_OPRL&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
                     &#x27;ID1&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
-                    &#x27;LES_OBL&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
+                    &#x27;LES_OBL&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;,
+                                &#x27;x-jsonld-id&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/properties/lesniOblast&#x27;},
                     &#x27;LO_CAST&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;LT&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
                            &#x27;x-jsonld-base&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/lt/&#x27;,

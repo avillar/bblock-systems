@@ -32,16 +32,24 @@ focal-lt:2S1 a skos:Concept,
         "2S1 - Fresh beech–oak sites"@en ;
     skos:topConceptOf focal-lt:LT .
 
+focal-prop:lesniOblast a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "lesnÌ oblast"@cz,
+        "forest region"@en ;
+    skos:topConceptOf focal:properties .
+
 focal-prop:lesniTyp a owl:ObjectProperty,
         skos:Concept ;
     rdfs:range focal-lt:LT ;
     skos:inScheme focal:properties ;
-    skos:prefLabel "LesnÌ typ"@cz,
-        "Forest type"@en ;
+    skos:prefLabel "lesnÌ typ"@cz,
+        "forest type"@en ;
     skos:topConceptOf focal:properties .
 
 focal:properties a skos:ConceptScheme ;
-    skos:hasTopConcept focal-prop:lesniTyp ;
+    skos:hasTopConcept focal-prop:lesniOblast,
+        focal-prop:lesniTyp ;
     skos:prefLabel "FOCAL Properties" .
 
 focal-lt:LT a owl:Class,

@@ -1,4 +1,15 @@
-path	@id
-/a	@type
-/b	https://example.org/my-bb-model/b
-/c	https://example.org/my-bb-model/c
+path	@id	schema
+/LT		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/LES_OBL		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/LO_CAST		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/UDRZBA		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/ZMENA		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/ZADOST		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/CHS		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/PCHS		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/OVER_T		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/ROK_MAP		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/ID1		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/SLT		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/PLOCHA		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml
+/DS_OPRL		/github/workspace/build/annotated/bbr/template/mySchema/schema.yaml

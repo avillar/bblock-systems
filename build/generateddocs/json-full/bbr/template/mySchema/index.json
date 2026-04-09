@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-03-28",
+  "dateOfLastChange": "2026-04-09",
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
@@ -23,7 +23,7 @@
   "tags": [
     "templates"
   ],
-  "shaclRules": {
+  "shaclShapes": {
     "ogc.bbr.template.mySchema": [
       "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
     ]
@@ -35,9 +35,10 @@
   },
   "sourceSchema": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/schema.yaml",
   "sourceLdContext": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/context.jsonld",
+  "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/resolvedProperties.json",
   "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/",
   "rdfData": [],
-  "validationPassed": true,
+  "validationPassed": false,
   "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/bbr/template/mySchema/",
   "description": "## My Schema\n\nDefines a set of properties that may be used in **any** JSON schema.\n\n> Note these properties may be used in the \"properties\" sub-component of a GeoJSON object, as a simple object\n\nThe numeric properties \"b\" and \"c\" have an example SHACL rule that if c is present, then c > b",
   "examples": [
@@ -51,17 +52,17 @@
         {
           "language": "json",
           "ref": "example.json",
-          "code": "{\n  \"a\": \"mynamespace:aThing\",\n  \"b\": 23,\n  \"c\": 1\n}\n\n",
+          "code": "{\n  \"LT\": \"2S1\",\n  \"LES_OBL\": 8,\n  \"LO_CAST\": \"a\",\n  \"UDRZBA\": 2022,\n  \"ZMENA\": \"Uveden\u00ed do souladu s KN\",\n  \"ZADOST\": \"-\",\n  \"CHS\": 25,\n  \"PCHS\": \"25a\",\n  \"OVER_T\": \"NE\",\n  \"ROK_MAP\": 2015,\n  \"ID1\": 128301,\n  \"SLT\": \"2S\",\n  \"PLOCHA\": 1224.24963,\n  \"DS_OPRL\": 2025\n}\n\n",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/bbr/template/mySchema/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": [\n    {\n      \"mynamespace\": \"http://example.com/mythings/\"\n    },\n    \"https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/context.jsonld\"\n  ],\n  \"a\": \"mynamespace:aThing\",\n  \"b\": 23,\n  \"c\": 1\n}",
+          "code": "{\n  \"@context\": [\n    {\n      \"mynamespace\": \"http://example.com/mythings/\"\n    },\n    \"https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/context.jsonld\"\n  ],\n  \"LT\": \"2S1\",\n  \"LES_OBL\": 8,\n  \"LO_CAST\": \"a\",\n  \"UDRZBA\": 2022,\n  \"ZMENA\": \"Uveden\\u00ed do souladu s KN\",\n  \"ZADOST\": \"-\",\n  \"CHS\": 25,\n  \"PCHS\": \"25a\",\n  \"OVER_T\": \"NE\",\n  \"ROK_MAP\": 2015,\n  \"ID1\": 128301,\n  \"SLT\": \"2S\",\n  \"PLOCHA\": 1224.24963,\n  \"DS_OPRL\": 2025\n}",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/bbr/template/mySchema/example_1_1.jsonld"
         },
         {
           "language": "ttl",
-          "code": "@prefix mynamespace: <http://example.com/mythings/> .\n@prefix ns1: <https://example.org/my-bb-model/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a mynamespace:aThing ;\n    ns1:b 23 ;\n    ns1:c 1 .\n\n",
+          "code": "\n",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/bbr/template/mySchema/example_1_1.ttl"
         }
       ]
@@ -88,7 +89,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: My example schema\ntype: object\nproperties:\n  a:\n    type: string\n    format: uri\n    x-jsonld-id: '@type'\n  b:\n    type: number\n    x-jsonld-id: https://example.org/my-bb-model/b\n  c:\n    type: number\n    x-jsonld-id: https://example.org/my-bb-model/c\nrequired:\n- a\n- b\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: My example schema\ntype: object\nproperties:\n  LT:\n    type: string\n  LES_OBL:\n    type: number\n  LO_CAST:\n    type: string\n  UDRZBA:\n    type: number\n  ZMENA:\n    type: string\n  ZADOST:\n    type: string\n  CHS:\n    type: number\n  PCHS:\n    type: string\n  OVER_T:\n    type: string\n  ROK_MAP:\n    type: number\n  ID1:\n    type: number\n  SLT:\n    type: string\n  PLOCHA:\n    type: number\n  DS_OPRL:\n    type: number\nrequired:\n- LT\nx-jsonld-extra-terms:\n  a: '@type'\n  b: https://example.org/my-bb-model/b\n  c: https://example.org/my-bb-model/c\n",
   "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
   "gitPath": "_sources/mySchema"
 }

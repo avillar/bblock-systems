@@ -3,22 +3,55 @@
   "description": "My example schema",
   "type": "object",
   "properties": {
-    "a": {
-      "type": "string",
-      "format": "uri",
-      "x-jsonld-id": "@type"
+    "LT": {
+      "type": "string"
     },
-    "b": {
-      "type": "number",
-      "x-jsonld-id": "https://example.org/my-bb-model/b"
+    "LES_OBL": {
+      "type": "number"
     },
-    "c": {
-      "type": "number",
-      "x-jsonld-id": "https://example.org/my-bb-model/c"
+    "LO_CAST": {
+      "type": "string"
+    },
+    "UDRZBA": {
+      "type": "number"
+    },
+    "ZMENA": {
+      "type": "string"
+    },
+    "ZADOST": {
+      "type": "string"
+    },
+    "CHS": {
+      "type": "number"
+    },
+    "PCHS": {
+      "type": "string"
+    },
+    "OVER_T": {
+      "type": "string"
+    },
+    "ROK_MAP": {
+      "type": "number"
+    },
+    "ID1": {
+      "type": "number"
+    },
+    "SLT": {
+      "type": "string"
+    },
+    "PLOCHA": {
+      "type": "number"
+    },
+    "DS_OPRL": {
+      "type": "number"
     }
   },
   "required": [
-    "a",
-    "b"
-  ]
+    "LT"
+  ],
+  "x-jsonld-extra-terms": {
+    "a": "@type",
+    "b": "https://example.org/my-bb-model/b",
+    "c": "https://example.org/my-bb-model/c"
+  }
 }

@@ -25,9 +25,20 @@ In **Markdown** format.
 #### json
 ```json
 {
-  "a": "mynamespace:aThing",
-  "b": 23,
-  "c": 1
+  "LT": "2S1",
+  "LES_OBL": 8,
+  "LO_CAST": "a",
+  "UDRZBA": 2022,
+  "ZMENA": "Uvedení do souladu s KN",
+  "ZADOST": "-",
+  "CHS": 25,
+  "PCHS": "25a",
+  "OVER_T": "NE",
+  "ROK_MAP": 2015,
+  "ID1": 128301,
+  "SLT": "2S",
+  "PLOCHA": 1224.24963,
+  "DS_OPRL": 2025
 }
 
 
@@ -42,21 +53,25 @@ In **Markdown** format.
     },
     "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/context.jsonld"
   ],
-  "a": "mynamespace:aThing",
-  "b": 23,
-  "c": 1
+  "LT": "2S1",
+  "LES_OBL": 8,
+  "LO_CAST": "a",
+  "UDRZBA": 2022,
+  "ZMENA": "Uveden\u00ed do souladu s KN",
+  "ZADOST": "-",
+  "CHS": 25,
+  "PCHS": "25a",
+  "OVER_T": "NE",
+  "ROK_MAP": 2015,
+  "ID1": 128301,
+  "SLT": "2S",
+  "PLOCHA": 1224.24963,
+  "DS_OPRL": 2025
 }
 ```
 
 #### ttl
 ```ttl
-@prefix mynamespace: <http://example.com/mythings/> .
-@prefix ns1: <https://example.org/my-bb-model/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-[] a mynamespace:aThing ;
-    ns1:b 23 ;
-    ns1:c 1 .
 
 
 ```
@@ -86,19 +101,40 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: My example schema
 type: object
 properties:
-  a:
+  LT:
     type: string
-    format: uri
-    x-jsonld-id: '@type'
-  b:
+  LES_OBL:
     type: number
-    x-jsonld-id: https://example.org/my-bb-model/b
-  c:
+  LO_CAST:
+    type: string
+  UDRZBA:
     type: number
-    x-jsonld-id: https://example.org/my-bb-model/c
+  ZMENA:
+    type: string
+  ZADOST:
+    type: string
+  CHS:
+    type: number
+  PCHS:
+    type: string
+  OVER_T:
+    type: string
+  ROK_MAP:
+    type: number
+  ID1:
+    type: number
+  SLT:
+    type: string
+  PLOCHA:
+    type: number
+  DS_OPRL:
+    type: number
 required:
-- a
-- b
+- LT
+x-jsonld-extra-terms:
+  a: '@type'
+  b: https://example.org/my-bb-model/b
+  c: https://example.org/my-bb-model/c
 
 ```
 

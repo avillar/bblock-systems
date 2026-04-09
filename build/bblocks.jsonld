@@ -12,7 +12,11 @@
       "prof": "http://www.w3.org/ns/dx/prof/",
       "dcat": "http://www.w3.org/ns/dcat#",
       "modspec": "http://www.opengis.net/def/ont/modspec/",
-      "itemIdentifier": "@id",
+      "void": "http://rdfs.org/ns/void#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "role": "http://www.w3.org/ns/dx/prof/role/",
+      "shacl": "https://www.w3.org/TR/shacl/",
+      "owl": "http://www.w3.org/2002/07/owl#",
       "baseURL": "@id",
       "name": "rdfs:label",
       "abstract": {
@@ -39,6 +43,10 @@
         "@id": "dct:modified",
         "@type": "xsd:date"
       },
+      "modified": {
+        "@id": "dct:modified",
+        "@type": "xsd:dateTime"
+      },
       "scope": {
         "@id": "bblocks:scope",
         "@type": "@id",
@@ -54,13 +62,11 @@
         }
       },
       "schema": {
-        "@id": "bblocks:hasSchema",
-        "@type": "@id",
-        "@container": "@index",
-        "@index": "dct:format"
+        "@id": "prof:hasResource",
+        "@type": "@id"
       },
       "ldContext": {
-        "@id": "bblocks:hasJsonLdContext",
+        "@id": "prof:hasResource",
         "@type": "@id"
       },
       "sourceLdContext": {
@@ -74,8 +80,14 @@
         "@index": "dct:identifier",
         "@context": {
           "mediatype": "dct:format",
-          "url": "rdfs:isDefinedBy"
+          "url": {
+            "@id": "rdfs:isDefinedBy",
+            "@type": "@id"
+          }
         }
+      },
+      "rdfs:isDefinedBy": {
+        "@type": "@id"
       },
       "hasConcepts": {
         "@reverse": "skos:inScheme"
@@ -84,27 +96,70 @@
         "@id": "bblocks:dependsOn",
         "@type": "@id"
       },
-      "profileOf": {
+      "isProfileOf": {
         "@id": "prof:isProfileOf",
         "@type": "@id"
       },
       "tags": "dcat:keyword",
-      "shaclRules": {
-        "@id": "bblocks:hasShaclRule",
-        "@type": "@id",
-        "@container": "@index",
-        "@index": "rdfs:seeAlso"
+      "shaclShapes": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
       },
       "validationReport": {
         "@id": "bblocks:hasValidationReport",
         "@type": "@id"
       },
+      "validationPassed": "bblocks:validationPassed",
       "imports": {
-        "@id": "bblocks:imports",
+        "@id": "owl:imports",
         "@type": "@id"
       },
       "conformanceClasses": {
         "@id": "modspec:class",
+        "@type": "@id"
+      },
+      "requirementClasses": {
+        "@id": "modspec:requirementsClass",
+        "@type": "@id"
+      },
+      "sparqlEndpoint": {
+        "@id": "void:sparqlEndpoint",
+        "@type": "@id"
+      },
+      "viewerURL": {
+        "@id": "foaf:homepage",
+        "@type": "@id"
+      },
+      "dct:conformsTo": {
+        "@type": "@id"
+      },
+      "prof:hasRole": {
+        "@type": "@id"
+      },
+      "prof:hasArtifact": {
+        "@type": "@id"
+      },
+      "rdfs:seeAlso": {
+        "@type": "@id"
+      },
+      "ontology": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "rdfData": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "links": {
+        "@id": "prof:hasResource",
+        "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld"
+      },
+      "concept": {
+        "@id": "skos:closeMatch",
+        "@type": "@id"
+      },
+      "rdfType": {
+        "@id": "rdfs:subClassOf",
         "@type": "@id"
       }
     }
@@ -112,12 +167,12 @@
   "name": "Building Blocks - My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2025-05-26T16:21:56.418395",
+  "modified": "2026-04-09T11:11:27.924770",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"d54737439f35f87501c8deabf419a6a892b42929",
-      "shortCommitId": "\"d54737",
-      "date": "2025-04-28T10:28:17+00:00\""
+      "commitId": "\"46c7348739fef1e5bde9f2eb3d2ca76e31b91ae7",
+      "shortCommitId": "\"46c734",
+      "date": "2026-04-09T11:09:34+00:00\""
     }
   },
   "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
@@ -125,12 +180,35 @@
   "baseURL": "https://markuswilhelmjahn.github.io/bblock-systems/",
   "viewerURL": "https://markuswilhelmjahn.github.io/bblock-systems/",
   "validationReport": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/report.html",
+  "validationReportJson": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
+  "remoteCacheDir": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/_cache",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://markuswilhelmjahn.github.io/bblock-systems/build/register.json",
+      "type": "application/json",
+      "title": "This Building Blocks Register in JSON format"
+    },
+    {
+      "rel": "self",
+      "href": "https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.ttl",
+      "type": "text/turtle",
+      "title": "This Building Blocks Register in RDF Turtle format"
+    },
+    {
+      "rel": "self",
+      "href": "https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.jsonld",
+      "type": "application/ld+json",
+      "title": "This Building Blocks Register in JSON-LD format"
+    }
+  ],
   "@type": [
     "skos:ConceptScheme",
-    "dcat:Catalog"
+    "dcat:Catalog",
+    "bblocks:BBlocksRegister"
   ],
   "skos:prefLabel": "Building Blocks - My OGC Building Blocks repository",
   "hasConcepts": [
@@ -144,7 +222,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-03-28",
+      "dateOfLastChange": "2026-04-09",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -157,41 +235,73 @@
       "tags": [
         "templates"
       ],
-      "shaclRules": {
-        "ogc.bbr.template.mySchema": [
-          "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
-        ]
+      "shaclShapes": [
+        {
+          "prof:hasArtifact": [
+            "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.bbr.template.mySchema",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
+        }
+      ],
+      "ldContext": {
+        "prof:hasArtifact": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/context.jsonld",
-      "schema": {
-        "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/schema.yaml",
-        "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/schema.json"
-      },
+      "schema": [
+        {
+          "prof:hasArtifact": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
       "sourceSchema": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/schema.yaml",
       "sourceLdContext": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/resolvedProperties.json",
       "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/",
       "rdfData": [],
-      "validationPassed": true,
+      "validationPassed": false,
       "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/bbr/template/mySchema/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/bbr/template/mySchema/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/bbr/template/mySchema/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/bbr/template/mySchema/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.bbr.template.mySchema"
         }
       },
+      "@id": "bblocks://ogc.bbr.template.mySchema",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
-        "dcat:Dataset"
-      ]
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "My Schema",
+      "openAPIDocument": null,
+      "ontology": null,
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://markuswilhelmjahn.github.io/bblock-systems/"
+      }
     },
     {
       "itemIdentifier": "ogc.bbr.template.myFeature",
@@ -202,7 +312,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2025-03-28",
+      "dateOfLastChange": "2026-04-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -212,8 +322,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.template.mySchema",
-        "ogc.geo.features.feature"
+        "bblocks://ogc.bbr.template.mySchema",
+        "bblocks://ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -221,40 +331,88 @@
       ],
       "group": "Examples",
       "highlighted": true,
-      "shaclRules": {
-        "ogc.bbr.template.mySchema": [
-          "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
-        ]
-      },
-      "schema": {
-        "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/schema.yaml",
-        "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/schema.json"
-      },
+      "shaclShapes": [
+        {
+          "prof:hasArtifact": [
+            "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.bbr.template.mySchema",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
+        },
+        {
+          "prof:hasArtifact": [
+            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
+        }
+      ],
+      "schema": [
+        {
+          "prof:hasArtifact": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
       "sourceSchema": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/schema.yaml",
-      "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/context.jsonld",
+      "ldContext": {
+        "prof:hasArtifact": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/resolvedProperties.json",
       "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/",
       "rdfData": [],
-      "validationPassed": true,
+      "validationPassed": false,
       "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/bbr/template/myFeature/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/bbr/template/myFeature/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/bbr/template/myFeature/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.bbr.template.myFeature"
         }
       },
+      "@id": "bblocks://ogc.bbr.template.myFeature",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
-        "dcat:Dataset"
-      ]
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Custom Feature",
+      "openAPIDocument": null,
+      "ontology": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://markuswilhelmjahn.github.io/bblock-systems/"
+      }
+    }
+  ],
+  "skos:hasTopConcept": [
+    {
+      "@id": "bblocks://ogc.bbr.template.mySchema"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.template.myFeature"
     }
   ]
 }

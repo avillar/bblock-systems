@@ -1,0 +1,454 @@
+{
+  "summary": {
+    "total": 2,
+    "passed": 0,
+    "failed": 2,
+    "result": false
+  },
+  "bblocks": {
+    "ogc.bbr.template.mySchema": {
+      "title": "Validation report for ogc.bbr.template.mySchema - My Schema",
+      "bblockName": "My Schema",
+      "bblockId": "ogc.bbr.template.mySchema",
+      "generated": "2026-04-09T11:11:28.471492+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": true,
+            "filename": "_sources/mySchema/tests/rules-fail.json",
+            "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/tests/rules-fail.json",
+            "language": "json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "GENERAL",
+              "title": "General",
+              "entries": [
+                {
+                  "op": "require-fail",
+                  "isError": false,
+                  "message": "Test was expected to fail and it did."
+                }
+              ]
+            },
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using rules-fail.json from test resources"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "rules-fail.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD rules-fail.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": true,
+                  "filename": "rules-fail.ttl",
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle rules-fail.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'LT' is a required property",
+                  "isError": true,
+                  "message": "ValidationError: 'LT' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'My example schema',\n     'properties': {'CHS': {'type': 'number'},\n                    'DS_OPRL': {'type': 'number'},\n                    'ID1': {'type': 'number'},\n                    'LES_OBL': {'type': 'number'},\n                    'LO_CAST': {'type': 'string'},\n                    'LT': {'type': 'string'},\n                    'OVER_T': {'type': 'string'},\n                    'PCHS': {'type': 'string'},\n                    'PLOCHA': {'type': 'number'},\n                    'ROK_MAP': {'type': 'number'},\n                    'SLT': {'type': 'string'},\n                    'UDRZBA': {'type': 'number'},\n                    'ZADOST': {'type': 'string'},\n                    'ZMENA': {'type': 'string'}},\n     'required': ['LT'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'a': '@type',\n                              'b': 'https://example.org/my-bb-model/b',\n                              'c': 'https://example.org/my-bb-model/c'}}\n\nOn instance:\n    {'CHS': 25,\n     'DS_OPRL': 2025,\n     'ID1': 128301,\n     'LES_OBL': 8,\n     'LO_CAST': 'a',\n     'OVER_T': 'NE',\n     'PCHS': '25a',\n     'PLOCHA': 1224.24963,\n     'ROK_MAP': 2015,\n     'SLT': '2S',\n     'UDRZBA': 2022,\n     'ZADOST': '-',\n     'ZMENA': 'Uveden\u00ed do souladu s KN'}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/template/mySchema/example_1_1.json",
+            "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/bbr/template/mySchema/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": true,
+                  "filename": "example_1_1.ttl",
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 2,
+        "passed": 1,
+        "failed": 1
+      }
+    },
+    "ogc.bbr.template.myFeature": {
+      "title": "Validation report for ogc.bbr.template.myFeature - Custom Feature",
+      "bblockName": "Custom Feature",
+      "bblockId": "ogc.bbr.template.myFeature",
+      "generated": "2026-04-09T11:11:29.170971+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "TEST_RESOURCE",
+            "requireFail": true,
+            "filename": "_sources/myFeature/tests/feature-fail.json",
+            "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/tests/feature-fail.json",
+            "language": "json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "GENERAL",
+              "title": "General",
+              "entries": [
+                {
+                  "op": "require-fail",
+                  "isError": false,
+                  "message": "Test was expected to fail and it did."
+                }
+              ]
+            },
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using feature-fail.json from test resources"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "feature-fail.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD feature-fail.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "feature-fail.ttl",
+                  "size": 1990,
+                  "isError": false,
+                  "message": "Output Turtle feature-fail.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'FeatureCollection' is not one of ['Feature']",
+                  "isError": true,
+                  "message": "ValidationError: 'FeatureCollection' is not one of ['Feature']\n\nFailed validating 'enum' in schema[0]['allOf'][0]['allOf'][0]['properties']['type']:\n    {'enum': ['Feature'], 'type': 'string', 'x-jsonld-id': '@type'}\n\nOn instance['type']:\n    'FeatureCollection'"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/mySchema/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/mySchema/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/mySchema/rules.shacl",
+                  "focusNodes": {
+                    "<https://www.ogc.org/rules/template/#testValues>": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": [
+                        "_:N0a337d89350c4048beb1c769194330bb",
+                        "_:N1a26626e3dbb4eab91b6ece4661b1579",
+                        "_:N14b98632ea0943529f9c6681ea01c2a3",
+                        "_:N9b7263fb0ab04715b721dcd7bca9d0c0",
+                        "_:N6ac6719931374a87bb4ef25024774b43",
+                        "_:Nd3097e70524a4a0fb5d7f0deb18ec8f1",
+                        "_:Na75b35fb142742e2a22c95f948acaca5",
+                        "_:Ne3ca1d837740442c9fa5e1354a8c4b6e",
+                        "_:N36df7cbc293b492ea90f31d3c7da4dc6",
+                        "_:N91fc6ab80ae2469289895165c1b2671f",
+                        "_:N23f0eddc66da492580207f397eaa0c74",
+                        "_:N4aeba7002c624f0d867544cb1c842d17",
+                        "_:N88b33d43ffda43c9b6418f7d45973a52"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: _:N0a337d89350c4048beb1c769194330bb,_:N1a26626e3dbb4eab91b6ece4661b1579,_:N14b98632ea0943529f9c6681ea01c2a3,_:N9b7263fb0ab04715b721dcd7bca9d0c0,_:N6ac6719931374a87bb4ef25024774b43,_:Nd3097e70524a4a0fb5d7f0deb18ec8f1,_:Na75b35fb142742e2a22c95f948acaca5,_:Ne3ca1d837740442c9fa5e1354a8c4b6e,_:N36df7cbc293b492ea90f31d3c7da4dc6,_:N91fc6ab80ae2469289895165c1b2671f,_:N23f0eddc66da492580207f397eaa0c74,_:N4aeba7002c624f0d867544cb1c842d17,_:N88b33d43ffda43c9b6418f7d45973a52\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/template/myFeature/example_1_1.json",
+            "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/bbr/template/myFeature/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/feature.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 1990,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'FeatureCollection' is not one of ['Feature']",
+                  "isError": true,
+                  "message": "ValidationError: 'FeatureCollection' is not one of ['Feature']\n\nFailed validating 'enum' in schema[0]['allOf'][0]['allOf'][0]['properties']['type']:\n    {'enum': ['Feature'], 'type': 'string', 'x-jsonld-id': '@type'}\n\nOn instance['type']:\n    'FeatureCollection'"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "_sources/mySchema/rules.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for _sources/mySchema/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "_sources/mySchema/rules.shacl",
+                  "focusNodes": {
+                    "<https://www.ogc.org/rules/template/#testValues>": {
+                      "nodes": []
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": [
+                        "_:N459657f321d443c1836c39a3755140f4",
+                        "_:Nbf639ebd1281488bbd158e2eafcefc20",
+                        "_:N6bc39a00d3114ad3aa7ab85bcb5f9a6d",
+                        "_:N1ed39120001b410cb5ef1f16669eba19",
+                        "_:Nab0d1726ae644ee1bb49b13522237df3",
+                        "_:N08512255e777469ab4530c04d98e4c64",
+                        "_:Nf9bf8e1787dd4064ba71c6b9cb38262f",
+                        "_:N462476433fd44a95b2142af73346cf44",
+                        "_:N51535e1386f342778faa9432ac3a2cfa",
+                        "_:N4851eef5b74b47cb903a9bda883510d5",
+                        "_:Na8bc0afc903140ec9364e542da324c8e",
+                        "_:N3a3b5e3f0504488bb9dd05126010cbd2",
+                        "_:N8e9e422cc9c94998a6328e3007e2279b"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: _:N459657f321d443c1836c39a3755140f4,_:Nbf639ebd1281488bbd158e2eafcefc20,_:N6bc39a00d3114ad3aa7ab85bcb5f9a6d,_:N1ed39120001b410cb5ef1f16669eba19,_:Nab0d1726ae644ee1bb49b13522237df3,_:N08512255e777469ab4530c04d98e4c64,_:Nf9bf8e1787dd4064ba71c6b9cb38262f,_:N462476433fd44a95b2142af73346cf44,_:N51535e1386f342778faa9432ac3a2cfa,_:N4851eef5b74b47cb903a9bda883510d5,_:Na8bc0afc903140ec9364e542da324c8e,_:N3a3b5e3f0504488bb9dd05126010cbd2,_:N8e9e422cc9c94998a6328e3007e2279b\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/template/myFeature/example_1_2.yaml",
+            "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/bbr/template/myFeature/example_1_2.yaml",
+            "exampleIndex": 1,
+            "snippetIndex": 2,
+            "language": "application/x-yaml"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_2.yaml from examples"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'LT' is a required property",
+                  "isError": true,
+                  "message": "ValidationError: 'LT' is a required property\n\nFailed validating 'required' in schema[0]['allOf'][1]['properties']['properties']:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'My example schema',\n     'properties': {'CHS': {'type': 'number'},\n                    'DS_OPRL': {'type': 'number'},\n                    'ID1': {'type': 'number'},\n                    'LES_OBL': {'type': 'number'},\n                    'LO_CAST': {'type': 'string'},\n                    'LT': {'type': 'string'},\n                    'OVER_T': {'type': 'string'},\n                    'PCHS': {'type': 'string'},\n                    'PLOCHA': {'type': 'number'},\n                    'ROK_MAP': {'type': 'number'},\n                    'SLT': {'type': 'string'},\n                    'UDRZBA': {'type': 'number'},\n                    'ZADOST': {'type': 'string'},\n                    'ZMENA': {'type': 'string'}},\n     'required': ['LT'],\n     'type': 'object',\n     'x-jsonld-extra-terms': {'a': '@type',\n                              'b': 'https://example.org/my-bb-model/b',\n                              'c': 'https://example.org/my-bb-model/c'}}\n\nOn instance['properties']:\n    {'a': 'mynamespace:aThing', 'b': 23, 'c': 0.1}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 3,
+        "passed": 1,
+        "failed": 2
+      }
+    }
+  }
+}

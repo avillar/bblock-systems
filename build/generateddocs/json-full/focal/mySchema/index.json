@@ -1,0 +1,95 @@
+
+
+{
+  "itemIdentifier": "ogc.focal.mySchema",
+  "$schema": "metaschema.yaml",
+  "name": "My Schema",
+  "abstract": "An example schema defining the set of properties of any type of object.",
+  "status": "under-development",
+  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2026-04-09",
+  "link": "https://github.com/opengeospatial/bblock-template",
+  "sources": [
+    {
+      "title": "Sample source document",
+      "link": "https://example.com/sources/1"
+    }
+  ],
+  "maturity": "mature",
+  "scope": "unstable",
+  "tags": [
+    "templates"
+  ],
+  "shaclShapes": {
+    "ogc.focal.mySchema": [
+      "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
+    ]
+  },
+  "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld",
+  "schema": {
+    "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml",
+    "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.json"
+  },
+  "sourceSchema": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/schema.yaml",
+  "sourceLdContext": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/context.jsonld",
+  "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/resolvedProperties.json",
+  "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/focal/mySchema/",
+  "description": "## My Schema\n\nDefines a set of properties that may be used in **any** JSON schema.\n\n> Note these properties may be used in the \"properties\" sub-component of a GeoJSON object, as a simple object\n\nThe numeric properties \"b\" and \"c\" have an example SHACL rule that if c is present, then c > b",
+  "examples": [
+    {
+      "title": "This is an example with just a description and no code snippets.",
+      "content": "This an example.\n\nIn **Markdown** format.",
+      "prefixes": {
+        "mynamespace": "http://example.com/mythings/"
+      },
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "example.json",
+          "code": "{\n  \"LT\": \"2S1\",\n  \"LES_OBL\": 8,\n  \"LO_CAST\": \"a\",\n  \"UDRZBA\": 2022,\n  \"ZMENA\": \"Uveden\u00ed do souladu s KN\",\n  \"ZADOST\": \"-\",\n  \"CHS\": 25,\n  \"PCHS\": \"25a\",\n  \"OVER_T\": \"NE\",\n  \"ROK_MAP\": 2015,\n  \"ID1\": 128301,\n  \"SLT\": \"2S\",\n  \"PLOCHA\": 1224.24963,\n  \"DS_OPRL\": 2025\n}\n\n",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": [\n    {\n      \"mynamespace\": \"http://example.com/mythings/\"\n    },\n    \"https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld\"\n  ],\n  \"LT\": \"2S1\",\n  \"LES_OBL\": 8,\n  \"LO_CAST\": \"a\",\n  \"UDRZBA\": 2022,\n  \"ZMENA\": \"Uveden\\u00ed do souladu s KN\",\n  \"ZADOST\": \"-\",\n  \"CHS\": 25,\n  \"PCHS\": \"25a\",\n  \"OVER_T\": \"NE\",\n  \"ROK_MAP\": 2015,\n  \"ID1\": 128301,\n  \"SLT\": \"2S\",\n  \"PLOCHA\": 1224.24963,\n  \"DS_OPRL\": 2025\n}",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .\n\n[] focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> .\n\n",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Examples can have content and/or code snippets.",
+      "content": "The content of this example. ",
+      "snippets": [
+        {
+          "language": "shell",
+          "code": "echo 'Hello, world!'",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_2_1.shell"
+        },
+        {
+          "language": "python",
+          "code": "print('Hello, world!')",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_2_2.python"
+        },
+        {
+          "language": "javascript",
+          "code": "console.log('Hello, world!')",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_2_3.javascript"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: My example schema\ntype: object\nproperties:\n  LT:\n    type: string\n    x-jsonld-id: https://w3id.org/ogc/hosted/focal/properties/lesniTyp\n    x-jsonld-type: '@id'\n    x-jsonld-base: https://w3id.org/ogc/hosted/focal/lt/\n  LES_OBL:\n    type: number\n  LO_CAST:\n    type: string\n  UDRZBA:\n    type: number\n  ZMENA:\n    type: string\n  ZADOST:\n    type: string\n  CHS:\n    type: number\n  PCHS:\n    type: string\n  OVER_T:\n    type: string\n  ROK_MAP:\n    type: number\n  ID1:\n    type: number\n  SLT:\n    type: string\n  PLOCHA:\n    type: number\n  DS_OPRL:\n    type: number\nrequired:\n- LT\nx-jsonld-prefixes:\n  focal-prop: https://w3id.org/ogc/hosted/focal/properties/\n",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
+  "gitPath": "_sources/mySchema"
+}

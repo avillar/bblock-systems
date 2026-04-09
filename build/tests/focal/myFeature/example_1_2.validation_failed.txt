@@ -1,0 +1,39 @@
+Validation report for ogc.focal.myFeature - Custom Feature
+Generated 2026-04-09T12:21:53.084068+00:00
+=== Files ===
+Using example_1_2.yaml from examples
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'LT' is a required property
+
+Failed validating 'required' in schema[0]['allOf'][1]['properties']['properties']:
+    {'$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'description': 'My example schema',
+     'properties': {'CHS': {'type': 'number'},
+                    'DS_OPRL': {'type': 'number'},
+                    'ID1': {'type': 'number'},
+                    'LES_OBL': {'type': 'number'},
+                    'LO_CAST': {'type': 'string'},
+                    'LT': {'type': 'string',
+                           'x-jsonld-base': 'https://w3id.org/ogc/hosted/focal/lt/',
+                           'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniTyp',
+                           'x-jsonld-type': '@id'},
+                    'OVER_T': {'type': 'string'},
+                    'PCHS': {'type': 'string'},
+                    'PLOCHA': {'type': 'number'},
+                    'ROK_MAP': {'type': 'number'},
+                    'SLT': {'type': 'string'},
+                    'UDRZBA': {'type': 'number'},
+                    'ZADOST': {'type': 'string'},
+                    'ZMENA': {'type': 'string'}},
+     'required': ['LT'],
+     'type': 'object',
+     'x-jsonld-prefixes': {'focal-prop': 'https://w3id.org/ogc/hosted/focal/properties/'}}
+
+On instance['properties']:
+    {'a': 'mynamespace:aThing', 'b': 23, 'c': 0.1}
+=== End JSON Schema ===
+

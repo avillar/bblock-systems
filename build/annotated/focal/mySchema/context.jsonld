@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "LT": {
+      "@context": {
+        "@base": "https://w3id.org/ogc/hosted/focal/lt/"
+      },
+      "@id": "focal-prop:lesniTyp",
+      "@type": "@id"
+    },
+    "focal-prop": "https://w3id.org/ogc/hosted/focal/properties/",
+    "@version": 1.1
+  }
+}

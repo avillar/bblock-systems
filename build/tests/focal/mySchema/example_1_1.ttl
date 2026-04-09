@@ -1,0 +1,4 @@
+@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .
+
+[] focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> .
+

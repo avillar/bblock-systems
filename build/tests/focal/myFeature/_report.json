@@ -1,0 +1,308 @@
+{
+  "title": "Validation report for ogc.focal.myFeature - Custom Feature",
+  "bblockName": "Custom Feature",
+  "bblockId": "ogc.focal.myFeature",
+  "generated": "2026-04-09T12:21:53.084140+00:00",
+  "result": false,
+  "items": [
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/myFeature/tests/feature-fail.json",
+        "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/tests/feature-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using feature-fail.json from test resources"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "feature-fail.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD feature-fail.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "feature-fail.ttl",
+              "size": 2002,
+              "isError": false,
+              "message": "Output Turtle feature-fail.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'FeatureCollection' is not one of ['Feature']",
+              "isError": true,
+              "message": "ValidationError: 'FeatureCollection' is not one of ['Feature']\n\nFailed validating 'enum' in schema[0]['allOf'][0]['allOf'][0]['properties']['type']:\n    {'enum': ['Feature'], 'type': 'string', 'x-jsonld-id': '@type'}\n\nOn instance['type']:\n    'FeatureCollection'"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/mySchema/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/mySchema/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/mySchema/rules.shacl",
+              "focusNodes": {
+                "<https://www.ogc.org/rules/template/#testValues>": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+              "focusNodes": {
+                "geojson:LinkShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "_:Nf8224d0f65a44352ad412feb64253ba3",
+                    "_:N4646d177a6f9416a80da807ed5cf4657",
+                    "_:N5178bae8781041d3b1d86b590b576cfa",
+                    "_:N1a1eed962f24416abbec3b09b5c7b929",
+                    "_:Nf973e8a0ff8f4bd8879d2a129f0cb30f",
+                    "_:Nd38dcaa6e20349d18523812993727662",
+                    "_:N6f77ada8a68e432a956218a66c2b3064",
+                    "_:N01c4a2683fb446839588792dd12e8d4b",
+                    "_:N9875bfffe91e4d5895e910ec249b255a",
+                    "_:N1fd00cb29ea64e1f972af82671d5dc61",
+                    "_:N87a0a068e2b147dea2530fc21cfc55c3",
+                    "_:N1678b5d47b0445a391517b1cbed9c814",
+                    "_:Nc06bae69046246759fb0817b57742c91"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: _:Nf8224d0f65a44352ad412feb64253ba3,_:N4646d177a6f9416a80da807ed5cf4657,_:N5178bae8781041d3b1d86b590b576cfa,_:N1a1eed962f24416abbec3b09b5c7b929,_:Nf973e8a0ff8f4bd8879d2a129f0cb30f,_:Nd38dcaa6e20349d18523812993727662,_:N6f77ada8a68e432a956218a66c2b3064,_:N01c4a2683fb446839588792dd12e8d4b,_:N9875bfffe91e4d5895e910ec249b255a,_:N1fd00cb29ea64e1f972af82671d5dc61,_:N87a0a068e2b147dea2530fc21cfc55c3,_:N1678b5d47b0445a391517b1cbed9c814,_:Nc06bae69046246759fb0817b57742c91\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/focal/myFeature/example_1_1.json",
+        "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/myFeature/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "application/json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using examples/feature.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 2003,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'FeatureCollection' is not one of ['Feature']",
+              "isError": true,
+              "message": "ValidationError: 'FeatureCollection' is not one of ['Feature']\n\nFailed validating 'enum' in schema[0]['allOf'][0]['allOf'][0]['properties']['type']:\n    {'enum': ['Feature'], 'type': 'string', 'x-jsonld-id': '@type'}\n\nOn instance['type']:\n    'FeatureCollection'"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/mySchema/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/mySchema/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/mySchema/rules.shacl",
+              "focusNodes": {
+                "<https://www.ogc.org/rules/template/#testValues>": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+              "focusNodes": {
+                "geojson:LinkShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:GeometryShape/sh:or/rdf:first": {
+                  "nodes": []
+                },
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "_:N7100400dee6b4643935475140c2ef87d",
+                    "_:N75413f5b0e1542f49efcbf699277f91e",
+                    "_:Nd5e6bb87821a4eca87aa0195fec20afc",
+                    "_:N14f8782192af4176827b945191eaf2a6",
+                    "_:N513ef583651b4e4ea4ea462fccb6309d",
+                    "_:Nce67e301abfc4c3cbd718631cc4549a5",
+                    "_:Nd6fcaab47a33462a9a4679e8100fc0cb",
+                    "_:Na6f76fd5b18c41a3ab6cf1ce88d3854f",
+                    "_:N34f28eeaf3944058881b1b8899b22abc",
+                    "_:Na3598431693540b08a1db888076fe486",
+                    "_:N3c2c04ca6eb244f1b6aef70b217954a2",
+                    "_:N3f9a6ce2f6944a93888f5ceb176670b9",
+                    "_:N86bb085ba78b47bd8cb22ef43c80f87a"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:FeatureShape: _:N7100400dee6b4643935475140c2ef87d,_:N75413f5b0e1542f49efcbf699277f91e,_:Nd5e6bb87821a4eca87aa0195fec20afc,_:N14f8782192af4176827b945191eaf2a6,_:N513ef583651b4e4ea4ea462fccb6309d,_:Nce67e301abfc4c3cbd718631cc4549a5,_:Nd6fcaab47a33462a9a4679e8100fc0cb,_:Na6f76fd5b18c41a3ab6cf1ce88d3854f,_:N34f28eeaf3944058881b1b8899b22abc,_:Na3598431693540b08a1db888076fe486,_:N3c2c04ca6eb244f1b6aef70b217954a2,_:N3f9a6ce2f6944a93888f5ceb176670b9,_:N86bb085ba78b47bd8cb22ef43c80f87a\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/focal/myFeature/example_1_2.yaml",
+        "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/myFeature/example_1_2.yaml",
+        "exampleIndex": 1,
+        "snippetIndex": 2,
+        "language": "application/x-yaml"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_2.yaml from examples"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'LT' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'LT' is a required property\n\nFailed validating 'required' in schema[0]['allOf'][1]['properties']['properties']:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'My example schema',\n     'properties': {'CHS': {'type': 'number'},\n                    'DS_OPRL': {'type': 'number'},\n                    'ID1': {'type': 'number'},\n                    'LES_OBL': {'type': 'number'},\n                    'LO_CAST': {'type': 'string'},\n                    'LT': {'type': 'string',\n                           'x-jsonld-base': 'https://w3id.org/ogc/hosted/focal/lt/',\n                           'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniTyp',\n                           'x-jsonld-type': '@id'},\n                    'OVER_T': {'type': 'string'},\n                    'PCHS': {'type': 'string'},\n                    'PLOCHA': {'type': 'number'},\n                    'ROK_MAP': {'type': 'number'},\n                    'SLT': {'type': 'string'},\n                    'UDRZBA': {'type': 'number'},\n                    'ZADOST': {'type': 'string'},\n                    'ZMENA': {'type': 'string'}},\n     'required': ['LT'],\n     'type': 'object',\n     'x-jsonld-prefixes': {'focal-prop': 'https://w3id.org/ogc/hosted/focal/properties/'}}\n\nOn instance['properties']:\n    {'a': 'mynamespace:aThing', 'b': 23, 'c': 0.1}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 3,
+    "passed": 1,
+    "failed": 2
+  }
+}

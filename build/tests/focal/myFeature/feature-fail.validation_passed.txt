@@ -1,0 +1,46 @@
+Validation report for ogc.focal.myFeature - Custom Feature
+Generated 2026-04-09T12:21:52.855323+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using feature-fail.json from test resources
+JSON-LD context is present - uplifting
+Output JSON-LD feature-fail.jsonld created
+Output Turtle feature-fail.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'FeatureCollection' is not one of ['Feature']
+
+Failed validating 'enum' in schema[0]['allOf'][0]['allOf'][0]['properties']['type']:
+    {'enum': ['Feature'], 'type': 'string', 'x-jsonld-id': '@type'}
+
+On instance['type']:
+    'FeatureCollection'
+=== End JSON Schema ===
+
+=== SHACL ===
+Validation result for _sources/mySchema/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for _sources/mySchema/rules.shacl:
+ - Shape <https://www.ogc.org/rules/template/#testValues>: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:Nf8224d0f65a44352ad412feb64253ba3,_:N4646d177a6f9416a80da807ed5cf4657,_:N5178bae8781041d3b1d86b590b576cfa,_:N1a1eed962f24416abbec3b09b5c7b929,_:Nf973e8a0ff8f4bd8879d2a129f0cb30f,_:Nd38dcaa6e20349d18523812993727662,_:N6f77ada8a68e432a956218a66c2b3064,_:N01c4a2683fb446839588792dd12e8d4b,_:N9875bfffe91e4d5895e910ec249b255a,_:N1fd00cb29ea64e1f972af82671d5dc61,_:N87a0a068e2b147dea2530fc21cfc55c3,_:N1678b5d47b0445a391517b1cbed9c814,_:Nc06bae69046246759fb0817b57742c91
+
+=== End SHACL ===
+

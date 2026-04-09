@@ -1,0 +1,15 @@
+path	@id	schema
+/LT	https://w3id.org/ogc/hosted/focal/properties/lesniTyp	/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/LES_OBL		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/LO_CAST		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/UDRZBA		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/ZMENA		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/ZADOST		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/CHS		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/PCHS		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/OVER_T		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/ROK_MAP		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/ID1		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/SLT		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/PLOCHA		/github/workspace/build/annotated/focal/mySchema/schema.yaml
+/DS_OPRL		/github/workspace/build/annotated/focal/mySchema/schema.yaml

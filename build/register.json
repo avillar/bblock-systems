@@ -2,7 +2,8 @@
   "name": "My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2026-04-09T11:11:27.924770",
+  "sparqlEndpoint": "http://defs-hosted.opengis.net/fuseki-hosted/query",
+  "modified": "2026-04-09T12:21:51.785060",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"46c7348739fef1e5bde9f2eb3d2ca76e31b91ae7",
@@ -21,7 +22,42 @@
   ],
   "bblocks": [
     {
-      "itemIdentifier": "ogc.bbr.template.mySchema",
+      "itemIdentifier": "ogc.focal.focal-ontology",
+      "name": "FOCAL Ontology",
+      "abstract": "RDF contents for the FOCAL ontology",
+      "status": "under-development",
+      "dateTimeAddition": "2026-04-09T00:00:00Z",
+      "itemClass": "model",
+      "register": "ogc-building-block-register",
+      "version": "0.1",
+      "dateOfLastChange": "2026-04-09",
+      "tags": [
+        "focal",
+        "ontology",
+        "forestry"
+      ],
+      "shaclShapes": {},
+      "ontology": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/focal-ontology/ontology.ttl",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/focal-ontology/",
+      "rdfData": [],
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/focal-ontology/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/focal-ontology/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.focal-ontology"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.focal.mySchema",
       "$schema": "metaschema.yaml",
       "name": "My Schema",
       "abstract": "An example schema defining the set of properties of any type of object.",
@@ -44,39 +80,39 @@
         "templates"
       ],
       "shaclShapes": {
-        "ogc.bbr.template.mySchema": [
+        "ogc.focal.mySchema": [
           "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
         ]
       },
-      "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld",
       "schema": {
-        "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/schema.yaml",
-        "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.json"
       },
       "sourceSchema": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/schema.yaml",
       "sourceLdContext": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/context.jsonld",
-      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/mySchema/resolvedProperties.json",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/resolvedProperties.json",
       "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/",
       "rdfData": [],
-      "validationPassed": false,
-      "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/bbr/template/mySchema/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/focal/mySchema/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/bbr/template/mySchema/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/mySchema/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/bbr/template/mySchema/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/mySchema/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.bbr.template.mySchema"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.mySchema"
         }
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.template.myFeature",
+      "itemIdentifier": "ogc.focal.myFeature",
       "name": "Custom Feature",
       "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
       "status": "under-development",
@@ -94,7 +130,7 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.bbr.template.mySchema",
+        "ogc.focal.mySchema",
         "ogc.geo.features.feature"
       ],
       "tags": [
@@ -104,7 +140,7 @@
       "group": "Examples",
       "highlighted": true,
       "shaclShapes": {
-        "ogc.bbr.template.mySchema": [
+        "ogc.focal.mySchema": [
           "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
         ],
         "ogc.geo.features.feature": [
@@ -112,28 +148,28 @@
         ]
       },
       "schema": {
-        "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/schema.yaml",
-        "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.json"
       },
       "sourceSchema": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/schema.yaml",
-      "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/context.jsonld",
-      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/bbr/template/myFeature/resolvedProperties.json",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/resolvedProperties.json",
       "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/",
       "rdfData": [],
       "validationPassed": false,
-      "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/bbr/template/myFeature/",
+      "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/focal/myFeature/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/myFeature/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/bbr/template/myFeature/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeature/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.bbr.template.myFeature"
+          "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.myFeature"
         }
       }
     }

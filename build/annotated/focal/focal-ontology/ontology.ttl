@@ -1,0 +1,41 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix focal: <https://w3id.org/ogc/hosted/focal/> .
+@prefix focal-lt: <https://w3id.org/ogc/hosted/focal/lt/> .
+@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/ogc/hosted/focal> a dcat:Catalog ;
+    dct:hasPart focal-lt:LT,
+        focal:properties ;
+    skos:prefLabel "FOCAL Catalog" .
+
+focal-lt:2S1 a skos:Concept,
+        focal-lt:LT ;
+    skos:definition "svěží bukodubový les (lesní typ 2. lesního vegetačního stupně na živných až středně živných půdách)"@cz,
+        "Fresh beech–oak forest (forest type of the 2nd forest vegetation zone on mesic, moderately fertile soils)"@en ;
+    skos:inScheme focal-lt:LT ;
+    skos:prefLabel "Svěží bukodubová stanoviště"@cz,
+        "Fresh beech–oak sites"@en ;
+    skos:topConceptOf focal-lt:LT .
+
+focal-prop:lesniTyp a owl:ObjectProperty,
+        skos:Concept ;
+    rdfs:range focal-lt:LT ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "LesnÌ typ"@cz,
+        "Forest type"@en ;
+    skos:topConceptOf focal:properties .
+
+focal:properties a skos:ConceptScheme ;
+    skos:hasTopConcept focal-prop:lesniTyp ;
+    skos:prefLabel "FOCAL Properties" .
+
+focal-lt:LT a owl:Class,
+        skos:ConceptScheme ;
+    skos:hasTopConcept focal-lt:2S1 ;
+    skos:prefLabel "LesnÌ typ"@cz,
+        "Forest type"@en .
+

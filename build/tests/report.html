@@ -64,38 +64,61 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-04-09T11:11:29.186482+00:00</small>
+            <small class="datetime">Generated at 2026-04-09T12:21:53.103497+00:00</small>
                 <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 0 / 2 (0%)
+                    Number of passing building blocks: 2 / 3 (66.67%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
                 <a href="#" class="collapse-all">Collapse all</a>
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.template.mySchema" id="bblock-ogc.bbr.template.mySchema">
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.focal.focal-ontology" id="bblock-ogc.focal.focal-ontology">
                             <h2 class="accordion-header bblock-title anchor-container">
-                                <button class="accordion-button " type="button"
+                                <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.bbr\.template\.mySchema">
+                                    data-bs-target="#bblock-collapse-ogc\.focal\.focal-ontology">
                                     <div class="flex-fill">
-                                        My Schema
-                                        <small class="ms-2 bblock-id">ogc.bbr.template.mySchema</small>
-                                        <a class="anchor" href="#bblock-ogc.bbr.template.mySchema">¶</a>
+                                        FOCAL Ontology
+                                        <small class="ms-2 bblock-id">ogc.focal.focal-ontology</small>
+                                        <a class="anchor" href="#bblock-ogc.focal.focal-ontology">¶</a>
                                     </div>
 
-                                    <span class="badge text-bg-danger me-2">
-                                            Tests Failed
-                                            (50% passed)
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.bbr.template.mySchema">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.focal.focal-ontology">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-danger">
-                                            Test passed: 1 / 2
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.focal.mySchema" id="bblock-ogc.focal.mySchema">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.focal\.mySchema">
+                                    <div class="flex-fill">
+                                        My Schema
+                                        <small class="ms-2 bblock-id">ogc.focal.mySchema</small>
+                                        <a class="anchor" href="#bblock-ogc.focal.mySchema">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.focal.mySchema">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 2 / 2
                                         </p>
-                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.bbr.template.mySchema-1">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.focal.mySchema-1">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
@@ -108,7 +131,7 @@
                                                     <a href="../../_sources/mySchema/tests/rules-fail.json" target="_blank">rules-fail.json</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
-                                                    <a class="anchor" href="#item-ogc.bbr.template.mySchema-1">¶</a>
+                                                    <a class="anchor" href="#item-ogc.focal.mySchema-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -133,7 +156,10 @@ Failed validating &#x27;required&#x27; in schema:
                     &#x27;ID1&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
                     &#x27;LES_OBL&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
                     &#x27;LO_CAST&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
-                    &#x27;LT&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
+                    &#x27;LT&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
+                           &#x27;x-jsonld-base&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/lt/&#x27;,
+                           &#x27;x-jsonld-id&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/properties/lesniTyp&#x27;,
+                           &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
                     &#x27;OVER_T&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;PCHS&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;PLOCHA&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
@@ -144,9 +170,7 @@ Failed validating &#x27;required&#x27; in schema:
                     &#x27;ZMENA&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;}},
      &#x27;required&#x27;: [&#x27;LT&#x27;],
      &#x27;type&#x27;: &#x27;object&#x27;,
-     &#x27;x-jsonld-extra-terms&#x27;: {&#x27;a&#x27;: &#x27;@type&#x27;,
-                              &#x27;b&#x27;: &#x27;https://example.org/my-bb-model/b&#x27;,
-                              &#x27;c&#x27;: &#x27;https://example.org/my-bb-model/c&#x27;}}
+     &#x27;x-jsonld-prefixes&#x27;: {&#x27;focal-prop&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/properties/&#x27;}}
 
 On instance:
     {&#x27;CHS&#x27;: 25,
@@ -166,7 +190,7 @@ On instance:
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.template.mySchema-2">
+                                        <div class="card mb-2 validation-item " id="item-ogc.focal.mySchema-2">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
@@ -176,11 +200,11 @@ On instance:
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/template/mySchema/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <a href="focal/mySchema/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
-                                                    <a class="anchor" href="#item-ogc.bbr.template.mySchema-2">¶</a>
+                                                    <a class="anchor" href="#item-ogc.focal.mySchema-2">¶</a>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-2">
@@ -189,9 +213,17 @@ On instance:
                                                                     <div class="font-monospace entry-message section-files ">Using example.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files text-danger">**Empty** output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/rules.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/rules.shacl:
+ - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -199,15 +231,15 @@ On instance:
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.template.myFeature" id="bblock-ogc.bbr.template.myFeature">
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.focal.myFeature" id="bblock-ogc.focal.myFeature">
                             <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.bbr\.template\.myFeature">
+                                    data-bs-target="#bblock-collapse-ogc\.focal\.myFeature">
                                     <div class="flex-fill">
                                         Custom Feature
-                                        <small class="ms-2 bblock-id">ogc.bbr.template.myFeature</small>
-                                        <a class="anchor" href="#bblock-ogc.bbr.template.myFeature">¶</a>
+                                        <small class="ms-2 bblock-id">ogc.focal.myFeature</small>
+                                        <a class="anchor" href="#bblock-ogc.focal.myFeature">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
@@ -216,12 +248,12 @@ On instance:
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.bbr.template.myFeature">
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.focal.myFeature">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-danger">
                                             Test passed: 1 / 3
                                         </p>
-                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.bbr.template.myFeature-1">
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.focal.myFeature-1">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
@@ -234,7 +266,7 @@ On instance:
                                                     <a href="../../_sources/myFeature/tests/feature-fail.json" target="_blank">feature-fail.json</a>
                                                     <span class="badge bg-secondary test_resource">Test resource</span>
                                                         <span class="badge text-bg-info">Requires fail</span>
-                                                    <a class="anchor" href="#item-ogc.bbr.template.myFeature-1">¶</a>
+                                                    <a class="anchor" href="#item-ogc.focal.myFeature-1">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
@@ -269,17 +301,17 @@ On instance[&#x27;type&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: _:N0a337d89350c4048beb1c769194330bb,_:N1a26626e3dbb4eab91b6ece4661b1579,_:N14b98632ea0943529f9c6681ea01c2a3,_:N9b7263fb0ab04715b721dcd7bca9d0c0,_:N6ac6719931374a87bb4ef25024774b43,_:Nd3097e70524a4a0fb5d7f0deb18ec8f1,_:Na75b35fb142742e2a22c95f948acaca5,_:Ne3ca1d837740442c9fa5e1354a8c4b6e,_:N36df7cbc293b492ea90f31d3c7da4dc6,_:N91fc6ab80ae2469289895165c1b2671f,_:N23f0eddc66da492580207f397eaa0c74,_:N4aeba7002c624f0d867544cb1c842d17,_:N88b33d43ffda43c9b6418f7d45973a52
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:Nf8224d0f65a44352ad412feb64253ba3,_:N4646d177a6f9416a80da807ed5cf4657,_:N5178bae8781041d3b1d86b590b576cfa,_:N1a1eed962f24416abbec3b09b5c7b929,_:Nf973e8a0ff8f4bd8879d2a129f0cb30f,_:Nd38dcaa6e20349d18523812993727662,_:N6f77ada8a68e432a956218a66c2b3064,_:N01c4a2683fb446839588792dd12e8d4b,_:N9875bfffe91e4d5895e910ec249b255a,_:N1fd00cb29ea64e1f972af82671d5dc61,_:N87a0a068e2b147dea2530fc21cfc55c3,_:N1678b5d47b0445a391517b1cbed9c814,_:Nc06bae69046246759fb0817b57742c91
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.template.myFeature-2">
+                                        <div class="card mb-2 validation-item " id="item-ogc.focal.myFeature-2">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
@@ -289,9 +321,9 @@ On instance[&#x27;type&#x27;]:
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/template/myFeature/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <a href="focal/myFeature/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
-                                                    <a class="anchor" href="#item-ogc.bbr.template.myFeature-2">¶</a>
+                                                    <a class="anchor" href="#item-ogc.focal.myFeature-2">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -324,17 +356,17 @@ On instance[&#x27;type&#x27;]:
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: _:N459657f321d443c1836c39a3755140f4,_:Nbf639ebd1281488bbd158e2eafcefc20,_:N6bc39a00d3114ad3aa7ab85bcb5f9a6d,_:N1ed39120001b410cb5ef1f16669eba19,_:Nab0d1726ae644ee1bb49b13522237df3,_:N08512255e777469ab4530c04d98e4c64,_:Nf9bf8e1787dd4064ba71c6b9cb38262f,_:N462476433fd44a95b2142af73346cf44,_:N51535e1386f342778faa9432ac3a2cfa,_:N4851eef5b74b47cb903a9bda883510d5,_:Na8bc0afc903140ec9364e542da324c8e,_:N3a3b5e3f0504488bb9dd05126010cbd2,_:N8e9e422cc9c94998a6328e3007e2279b
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:N7100400dee6b4643935475140c2ef87d,_:N75413f5b0e1542f49efcbf699277f91e,_:Nd5e6bb87821a4eca87aa0195fec20afc,_:N14f8782192af4176827b945191eaf2a6,_:N513ef583651b4e4ea4ea462fccb6309d,_:Nce67e301abfc4c3cbd718631cc4549a5,_:Nd6fcaab47a33462a9a4679e8100fc0cb,_:Na6f76fd5b18c41a3ab6cf1ce88d3854f,_:N34f28eeaf3944058881b1b8899b22abc,_:Na3598431693540b08a1db888076fe486,_:N3c2c04ca6eb244f1b6aef70b217954a2,_:N3f9a6ce2f6944a93888f5ceb176670b9,_:N86bb085ba78b47bd8cb22ef43c80f87a
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.template.myFeature-3">
+                                        <div class="card mb-2 validation-item " id="item-ogc.focal.myFeature-3">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
@@ -344,9 +376,9 @@ On instance[&#x27;type&#x27;]:
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="bbr/template/myFeature/example_1_2.yaml" target="_blank">example_1_2.yaml</a>
+                                                    <a href="focal/myFeature/example_1_2.yaml" target="_blank">example_1_2.yaml</a>
                                                     <span class="badge bg-secondary example">Example</span>
-                                                    <a class="anchor" href="#item-ogc.bbr.template.myFeature-3">¶</a>
+                                                    <a class="anchor" href="#item-ogc.focal.myFeature-3">¶</a>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
@@ -366,7 +398,10 @@ Failed validating &#x27;required&#x27; in schema[0][&#x27;allOf&#x27;][1][&#x27;
                     &#x27;ID1&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
                     &#x27;LES_OBL&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
                     &#x27;LO_CAST&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
-                    &#x27;LT&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
+                    &#x27;LT&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;,
+                           &#x27;x-jsonld-base&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/lt/&#x27;,
+                           &#x27;x-jsonld-id&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/properties/lesniTyp&#x27;,
+                           &#x27;x-jsonld-type&#x27;: &#x27;@id&#x27;},
                     &#x27;OVER_T&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;PCHS&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;PLOCHA&#x27;: {&#x27;type&#x27;: &#x27;number&#x27;},
@@ -377,9 +412,7 @@ Failed validating &#x27;required&#x27; in schema[0][&#x27;allOf&#x27;][1][&#x27;
                     &#x27;ZMENA&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;}},
      &#x27;required&#x27;: [&#x27;LT&#x27;],
      &#x27;type&#x27;: &#x27;object&#x27;,
-     &#x27;x-jsonld-extra-terms&#x27;: {&#x27;a&#x27;: &#x27;@type&#x27;,
-                              &#x27;b&#x27;: &#x27;https://example.org/my-bb-model/b&#x27;,
-                              &#x27;c&#x27;: &#x27;https://example.org/my-bb-model/c&#x27;}}
+     &#x27;x-jsonld-prefixes&#x27;: {&#x27;focal-prop&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/properties/&#x27;}}
 
 On instance[&#x27;properties&#x27;]:
     {&#x27;a&#x27;: &#x27;mynamespace:aThing&#x27;, &#x27;b&#x27;: 23, &#x27;c&#x27;: 0.1}</div>

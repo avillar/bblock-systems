@@ -1,0 +1,26 @@
+
+
+{
+  "itemIdentifier": "ogc.focal.focal-ontology",
+  "name": "FOCAL Ontology",
+  "abstract": "RDF contents for the FOCAL ontology",
+  "status": "under-development",
+  "dateTimeAddition": "2026-04-09T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2026-04-09",
+  "tags": [
+    "focal",
+    "ontology",
+    "forestry"
+  ],
+  "shaclShapes": {},
+  "ontology": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/focal-ontology/ontology.ttl",
+  "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/focal-ontology/",
+  "rdfData": [],
+  "validationPassed": true,
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
+  "gitPath": "_sources/focal-ontology"
+}

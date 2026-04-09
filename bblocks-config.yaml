@@ -27,7 +27,7 @@ schema-oas30-downcompile: False
 #   (see .github/workflow/process-bblocks.yml)
 #
 sparql:
-   push: http://defs-hosted.opengis.net/fuseki-hosted/update           # SPARQL Graph Store Protocol endpoint for uploading data
+   push: http://defs-hosted.opengis.net/fuseki-hosted/data           # SPARQL Graph Store Protocol endpoint for uploading data
    graph: https://w3id.org/ogc/hosted/focal  # SPARQL Graph where data will be uploaded
 #                                           #  if left empty, the base URL for the publication will be used
    query: http://defs-hosted.opengis.net/fuseki-hosted/query       # SPARQL query endpoint where data will be available

@@ -30,10 +30,21 @@ focal-lt:LT a skos:ConceptScheme, owl:Class ;
 .
 
 focal-lt:2S1 a skos:Concept, focal-lt:LT ;
-  skos:prefLabel "Svěží bukodubová stanoviště"@cz,
-    "Fresh beech–oak sites"@en ;
-  skos:definition "svěží bukodubový les (lesní typ 2. lesního vegetačního stupně na živných až středně živných půdách)"@cz,
-    "Fresh beech–oak forest (forest type of the 2nd forest vegetation zone on mesic, moderately fertile soils)"@en ;
+  skos:prefLabel "2S1 - Svěží bukodubová stanoviště"@cz,
+    "2S1 - Fresh beech–oak sites"@en ;
+  skos:definition "2S1 - svěží bukodubový les (lesní typ 2. lesního vegetačního stupně na živných až středně živných půdách)"@cz,
+    "2S1 - Fresh beech–oak forest (forest type of the 2nd forest vegetation zone on mesic, moderately fertile soils)"@en ;
+  skos:notation "2S1" ;
+  skos:topConceptOf focal-lt:LT ;
+  skos:inScheme focal-lt:LT ;
+.
+
+focal-lt:2L1 a skos:Concept, focal-lt:LT ;
+  skos:prefLabel "2L1 - Nivní (lužní) dubová stanoviště"@cz,
+    "2L1 - Floodplain oak sites"@en ;
+  skos:definition "2L1 – lužní (nivní) dubový les 2. lesního vegetačního stupně na vlhkých až periodicky zamokřených půdách"@cz,
+    "2L1 – Oak floodplain forest (forest type of the 2nd forest vegetation zone on moist to periodically waterlogged soils)"@en ;
+  skos:notation "2L1" ;
   skos:topConceptOf focal-lt:LT ;
   skos:inScheme focal-lt:LT ;
 .

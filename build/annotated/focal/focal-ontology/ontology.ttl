@@ -12,102 +12,6 @@
         focal:properties ;
     skos:prefLabel "FOCAL Catalog" .
 
-focal-prop:lesniCHS a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "Cílový hospodářský soubor"@cz,
-        "Ziel-Wirtschaftseinheit"@de,
-        "Target management unit"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniDSOPRL a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "Datový soubor oblastní plán rozvoje lesů"@cz,
-        "Datensatz des regionalen Waldentwicklungsplans"@de,
-        "Dataset of the regional forest development plan"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniID1 a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "Jednoznačný identifikátor"@cz,
-        "Eindeutige Kennung"@de,
-        "Unique identifier"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniOVERT a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "Ověřeno v terénu"@cz,
-        "Im Gelände überprüft"@de,
-        "Field verified"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniOblastCast a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "lesnÌ oblast cast"@cz,
-        "Waldgebietsteil"@de,
-        "forest region part"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniPCHS a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "Podsoubor cílového hospodářského souboru"@cz,
-        "Teilbestand der Ziel-Wirtschaftseinheit"@de,
-        "Subunit of the target management unit"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniPLOCHA a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "V metrech čtverečních"@cz,
-        "Fläche in Quadratmetern"@de,
-        "Area in square meters"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniROKMAP a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "Rok sběru dat"@cz,
-        "Jahr der Datenerhebung"@de,
-        "Year of data collection"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniSLT a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "Soubor lesních typů"@cz,
-        "Waldtypklassifizierungssystem"@de,
-        "Forest type classification system"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniUDRZBA a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "Rok poslední změny dat"@cz,
-        "Jahr der letzten Datenänderung"@de,
-        "Year of last data update"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniZADOST a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "Číselné zařazení žádosti"@cz,
-        "ID des Antrags"@de,
-        "ID of the request"@en ;
-    skos:topConceptOf focal:properties .
-
-focal-prop:lesniZMENA a owl:DataTypeProperty,
-        skos:Concept ;
-    skos:inScheme focal:properties ;
-    skos:prefLabel "Na û·dost vlastnÌka"@cz,
-        "Änderung: auf Antrag des Eigentümers"@de,
-        "Change: based on owner request"@en ;
-    skos:topConceptOf focal:properties .
-
 focal-lt:2I2 a skos:Concept,
         focal-lt:LT ;
     skos:definition "2I2 – kyselá hlinitá buková doubrava chudší, lesní typ 2. lesního vegetačního stupně na kyselých, živinami chudších hlinitých půdách"@cz,
@@ -156,12 +60,84 @@ focal-lt:NE a skos:Concept,
         "NE - Non-forest unit"@en ;
     skos:topConceptOf focal-lt:LT .
 
+focal-prop:lesniCHS a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "Cílový hospodářský soubor"@cz,
+        "Ziel-Wirtschaftseinheit"@de,
+        "Target management unit"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniDSOPRL a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "Datový soubor oblastní plán rozvoje lesů"@cz,
+        "Datensatz des regionalen Waldentwicklungsplans"@de,
+        "Dataset of the regional forest development plan"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniID1 a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "Jednoznačný identifikátor"@cz,
+        "Eindeutige Kennung"@de,
+        "Unique identifier"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniOVERT a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "Ověřeno v terénu"@cz,
+        "Im Gelände überprüft"@de,
+        "Field verified"@en ;
+    skos:topConceptOf focal:properties .
+
 focal-prop:lesniOblast a owl:DataTypeProperty,
         skos:Concept ;
     skos:inScheme focal:properties ;
     skos:prefLabel "lesnÌ oblast"@cz,
         "Waldgebiet"@de,
         "forest region"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniOblastCast a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "lesnÌ oblast cast"@cz,
+        "Waldgebietsteil"@de,
+        "forest region part"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniPCHS a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "Podsoubor cílového hospodářského souboru"@cz,
+        "Teilbestand der Ziel-Wirtschaftseinheit"@de,
+        "Subunit of the target management unit"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniPLOCHA a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "V metrech čtverečních"@cz,
+        "Fläche in Quadratmetern"@de,
+        "Area in square meters"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniROKMAP a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "Rok sběru dat"@cz,
+        "Jahr der Datenerhebung"@de,
+        "Year of data collection"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniSLT a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "Soubor lesních typů"@cz,
+        "Waldtypklassifizierungssystem"@de,
+        "Forest type classification system"@en ;
     skos:topConceptOf focal:properties .
 
 focal-prop:lesniTyp a owl:ObjectProperty,
@@ -171,6 +147,30 @@ focal-prop:lesniTyp a owl:ObjectProperty,
     skos:prefLabel "lesnÌ typ"@cz,
         "Waldtyp"@de,
         "forest type"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniUDRZBA a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "Rok poslední změny dat"@cz,
+        "Jahr der letzten Datenänderung"@de,
+        "Year of last data update"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniZADOST a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "Číselné zařazení žádosti"@cz,
+        "ID des Antrags"@de,
+        "ID of the request"@en ;
+    skos:topConceptOf focal:properties .
+
+focal-prop:lesniZMENA a owl:DataTypeProperty,
+        skos:Concept ;
+    skos:inScheme focal:properties ;
+    skos:prefLabel "Na û·dost vlastnÌka"@cz,
+        "Änderung: auf Antrag des Eigentümers"@de,
+        "Change: based on owner request"@en ;
     skos:topConceptOf focal:properties .
 
 focal-lt:LT a owl:Class,
@@ -184,7 +184,19 @@ focal-lt:LT a owl:Class,
         "forest type"@en .
 
 focal:properties a skos:ConceptScheme ;
-    skos:hasTopConcept focal-prop:lesniOblast,
-        focal-prop:lesniTyp ;
+    skos:hasTopConcept focal-prop:lesniCHS,
+        focal-prop:lesniDSOPRL,
+        focal-prop:lesniID1,
+        focal-prop:lesniOVERT,
+        focal-prop:lesniOblast,
+        focal-prop:lesniOblastCast,
+        focal-prop:lesniPCHS,
+        focal-prop:lesniPLOCHA,
+        focal-prop:lesniROKMAP,
+        focal-prop:lesniSLT,
+        focal-prop:lesniTyp,
+        focal-prop:lesniUDRZBA,
+        focal-prop:lesniZADOST,
+        focal-prop:lesniZMENA ;
     skos:prefLabel "FOCAL Forest Type Properties" .
 

@@ -1,5 +1,5 @@
 Validation report for ogc.focal.myFeature - Custom Feature
-Generated 2026-04-09T17:20:02.256896+00:00
+Generated 2026-04-09T17:31:08.616072+00:00
 === Files ===
 Using example_1_2.yaml from examples
 === End Files ===

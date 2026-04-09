@@ -1,7 +1,12 @@
 {
   "@context": {
-    "a": "@type",
-    "b": "https://example.org/my-bb-model/b",
-    "c": "https://example.org/my-bb-model/c"
+    "focal-prop": "https://w3id.org/ogc/hosted/focal/properties/",
+    "LT": {
+      "@id": "focal-prop:lesniTyp",
+      "@type": "@id",
+      "@context": {
+        "@base": "https://w3id.org/ogc/hosted/focal/lt/"
+      }
+    }
   }
 }

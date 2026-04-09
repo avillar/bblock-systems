@@ -1,0 +1,11 @@
+{
+  "name": "FOCAL Ontology",
+  "abstract": "RDF contents for the FOCAL ontology",
+  "status": "under-development",
+  "dateTimeAddition": "2026-04-09T00:00:00Z",
+  "itemClass": "model",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2023-04-05",
+  "tags": ["focal", "ontology", "forestry"]
+}

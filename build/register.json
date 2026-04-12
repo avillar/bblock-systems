@@ -3,7 +3,7 @@
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
   "sparqlEndpoint": "http://defs-hosted.opengis.net/fuseki-hosted/query",
-  "modified": "2026-04-12T09:47:55.839578",
+  "modified": "2026-04-12T09:59:48.512508",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"8183e80415ce6fc50bf23df54045ccca9a1f894d",
@@ -130,8 +130,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.focal.mySchema",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.focal.mySchema"
       ],
       "tags": [
         "feature",
@@ -140,11 +140,11 @@
       "group": "Examples",
       "highlighted": true,
       "shaclShapes": {
-        "ogc.focal.mySchema": [
-          "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
-        ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ],
+        "ogc.focal.mySchema": [
+          "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
         ]
       },
       "schema": {

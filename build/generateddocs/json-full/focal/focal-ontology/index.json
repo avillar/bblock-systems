@@ -20,6 +20,7 @@
   "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/focal-ontology/",
   "rdfData": [],
   "validationPassed": true,
+  "description": "## FOCAL Ontology\n\nDefines a set of properties for a forest typology uploaded directly to an official register.\n\n> Note these URIs may be mapped to properties in **any** JSON schema.\n",
   "annotatedSchema": null,
   "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
   "gitPath": "_sources/focal-ontology"

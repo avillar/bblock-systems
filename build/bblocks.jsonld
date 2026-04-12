@@ -168,7 +168,7 @@
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
   "sparqlEndpoint": "http://defs-hosted.opengis.net/fuseki-hosted/query",
-  "modified": "2026-04-12T09:47:55.839578",
+  "modified": "2026-04-12T09:59:48.512508",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"8183e80415ce6fc50bf23df54045ccca9a1f894d",
@@ -379,8 +379,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "bblocks://ogc.focal.mySchema",
-        "bblocks://ogc.geo.features.feature"
+        "bblocks://ogc.geo.features.feature",
+        "bblocks://ogc.focal.mySchema"
       ],
       "tags": [
         "feature",
@@ -391,18 +391,18 @@
       "shaclShapes": [
         {
           "prof:hasArtifact": [
-            "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
+            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
           ],
-          "rdfs:seeAlso": "bblocks://ogc.focal.mySchema",
+          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"
         },
         {
           "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+            "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
           ],
-          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
+          "rdfs:seeAlso": "bblocks://ogc.focal.mySchema",
           "prof:hasRole": "role:validation",
           "dct:format": "text/turtle",
           "dct:conformsTo": "shacl:"

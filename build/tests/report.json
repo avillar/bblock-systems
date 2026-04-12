@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.focal.focal-ontology - FOCAL Ontology",
       "bblockName": "FOCAL Ontology",
       "bblockId": "ogc.focal.focal-ontology",
-      "generated": "2026-04-09T17:57:33.530885+00:00",
+      "generated": "2026-04-12T09:47:56.789949+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
@@ -24,7 +24,7 @@
       "title": "Validation report for ogc.focal.mySchema - My Schema",
       "bblockName": "My Schema",
       "bblockId": "ogc.focal.mySchema",
-      "generated": "2026-04-09T17:57:33.555481+00:00",
+      "generated": "2026-04-12T09:47:56.813925+00:00",
       "result": true,
       "items": [
         {
@@ -206,7 +206,7 @@
       "title": "Validation report for ogc.focal.myFeature - Custom Feature",
       "bblockName": "Custom Feature",
       "bblockId": "ogc.focal.myFeature",
-      "generated": "2026-04-09T17:57:34.236041+00:00",
+      "generated": "2026-04-12T09:47:57.594623+00:00",
       "result": false,
       "items": [
         {
@@ -279,49 +279,6 @@
               "entries": [
                 {
                   "op": "shacl-report",
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "focusNodes": {
-                    "geojson:FeatureShape": {
-                      "nodes": [
-                        "_:N97140fdd21fe49449cf2a9bf5b506a39",
-                        "_:Ne4ff9b5e7ff64c389bca6c2931806e09",
-                        "_:N76fccdc6a3c54ffeb8961cded0c21f8b",
-                        "_:N279e23784a6d44fab50d135fd692e24c",
-                        "_:N43cd4d37225c4adfa7de871d4227a9cb",
-                        "_:N36ce50eb6d0e41f1a0183fa387fe6649",
-                        "_:Nb0a375325708426591451c3d02b3c448",
-                        "_:Nd159f2cbfe274a39b5b0e843e1343043",
-                        "_:N7e9105c234be457599204231cdac81b6",
-                        "_:Nf26a8de246a44eaea005df8945671f84",
-                        "_:Ndc17dc6abfb84010bd01b3867ab01063",
-                        "_:N1623b76119004d7d9ccfe9c207a5bfa0",
-                        "_:Nc9102302fff54dcb8250b8a926fa0052"
-                      ]
-                    },
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    },
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: _:N97140fdd21fe49449cf2a9bf5b506a39,_:Ne4ff9b5e7ff64c389bca6c2931806e09,_:N76fccdc6a3c54ffeb8961cded0c21f8b,_:N279e23784a6d44fab50d135fd692e24c,_:N43cd4d37225c4adfa7de871d4227a9cb,_:N36ce50eb6d0e41f1a0183fa387fe6649,_:Nb0a375325708426591451c3d02b3c448,_:Nd159f2cbfe274a39b5b0e843e1343043,_:N7e9105c234be457599204231cdac81b6,_:Nf26a8de246a44eaea005df8945671f84,_:Ndc17dc6abfb84010bd01b3867ab01063,_:N1623b76119004d7d9ccfe9c207a5bfa0,_:Nc9102302fff54dcb8250b8a926fa0052\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/mySchema/rules.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -336,6 +293,49 @@
                   },
                   "isError": false,
                   "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": [
+                        "_:N77fc4eaf66d94f43b956e21f8811f762",
+                        "_:N38e00d31fcf1449eb35a0f40dc5d2d00",
+                        "_:N1e5abcbc1c6641898dd230abd8f931ef",
+                        "_:Nd4a2ce25d5bf4e8a90e6d1fdd84fa04b",
+                        "_:N827840be632e460f8383e126579e1214",
+                        "_:N3e92ab66ed714198990ea84b92b8bafa",
+                        "_:N2a9180d8c8da416592afc3ffb8f84b76",
+                        "_:N0fba9a5427ac4a7db791716b78a51153",
+                        "_:N44259f4616cb4a4fa890c6cfed9153a6",
+                        "_:N8e8ca307f96b4dd1a5b0e3cf4a2cd5a1",
+                        "_:N173bdae63732491b84cc52473dfe97f8",
+                        "_:N187c4901ef494ecc808901dcefe929f6",
+                        "_:N177c6c89f24e43748f84ecbed08692f7"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: _:N77fc4eaf66d94f43b956e21f8811f762,_:N38e00d31fcf1449eb35a0f40dc5d2d00,_:N1e5abcbc1c6641898dd230abd8f931ef,_:Nd4a2ce25d5bf4e8a90e6d1fdd84fa04b,_:N827840be632e460f8383e126579e1214,_:N3e92ab66ed714198990ea84b92b8bafa,_:N2a9180d8c8da416592afc3ffb8f84b76,_:N0fba9a5427ac4a7db791716b78a51153,_:N44259f4616cb4a4fa890c6cfed9153a6,_:N8e8ca307f96b4dd1a5b0e3cf4a2cd5a1,_:N173bdae63732491b84cc52473dfe97f8,_:N187c4901ef494ecc808901dcefe929f6,_:N177c6c89f24e43748f84ecbed08692f7\n"
                 }
               ]
             }
@@ -402,49 +402,6 @@
               "entries": [
                 {
                   "op": "shacl-report",
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-                  "isError": false,
-                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
-                },
-                {
-                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
-                  "focusNodes": {
-                    "geojson:FeatureShape": {
-                      "nodes": [
-                        "_:Ne4aa37c8d7904f76afa094333d0163a0",
-                        "_:N40e3ea9a0013418a8734b9b365b9340e",
-                        "_:Na5af7cafcbf14ee9973ab1391410d53b",
-                        "_:Nff3a32f2c4664985a60eaa3abe88f469",
-                        "_:N1cc125d2e94a46e283f0c1f1add2efbd",
-                        "_:N4f7ccb2e4bca46eda018fe86829c2a01",
-                        "_:Nfcba31b86b604ae397183185301fefd3",
-                        "_:Nf02c3f11736b4de7bfcc4cfb993980e0",
-                        "_:N70f859a9110e4ef184a6d77dff55219d",
-                        "_:Nb5051d735d47466498a64901a816aba7",
-                        "_:N380fa5f9a7aa42ee82976299824662a0",
-                        "_:Ncc1a4d6cba9b4d8ea920167a08f199d3",
-                        "_:N89a6d0ed61614dc0bda3af095a86709c"
-                      ]
-                    },
-                    "geojson:GeometryShape": {
-                      "nodes": []
-                    },
-                    "geojson:LinkShape": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:first": {
-                      "nodes": []
-                    },
-                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
-                      "nodes": []
-                    }
-                  },
-                  "isError": false,
-                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: _:Ne4aa37c8d7904f76afa094333d0163a0,_:N40e3ea9a0013418a8734b9b365b9340e,_:Na5af7cafcbf14ee9973ab1391410d53b,_:Nff3a32f2c4664985a60eaa3abe88f469,_:N1cc125d2e94a46e283f0c1f1add2efbd,_:N4f7ccb2e4bca46eda018fe86829c2a01,_:Nfcba31b86b604ae397183185301fefd3,_:Nf02c3f11736b4de7bfcc4cfb993980e0,_:N70f859a9110e4ef184a6d77dff55219d,_:Nb5051d735d47466498a64901a816aba7,_:N380fa5f9a7aa42ee82976299824662a0,_:Ncc1a4d6cba9b4d8ea920167a08f199d3,_:N89a6d0ed61614dc0bda3af095a86709c\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n"
-                },
-                {
-                  "op": "shacl-report",
                   "shaclFile": "_sources/mySchema/rules.shacl",
                   "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
                   "isError": false,
@@ -459,6 +416,49 @@
                   },
                   "isError": false,
                   "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
+                },
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": [
+                        "_:N3621430d7fed4aaea1bf20aee03ae1f3",
+                        "_:N67f22bfbd2c24575827889114c9ccd3c",
+                        "_:Nebb503f8400a4e61a8982a936bb43f32",
+                        "_:N48ab6d47347f490ba9d8dd2d1f5a5011",
+                        "_:Neb46c440e70641b0ab80bad343fb24bc",
+                        "_:N1894682ae6a44d10aa5ce8190b86b542",
+                        "_:Na708e43423ea401b99508e608aad4701",
+                        "_:Nbdb89a9728894b499ad8b5e357381e8b",
+                        "_:N31e0c36e598944759e62a094b4880066",
+                        "_:Ndbcf017059844ce399cb8dbda58efd9c",
+                        "_:N93c53c3fddef40bd8000a9a69fd3cd89",
+                        "_:N3fbb7105ce4c4764a976bfc0d9eaadf7",
+                        "_:Nbf21d54aca964b91ad42597cb3682e64"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: _:N3621430d7fed4aaea1bf20aee03ae1f3,_:N67f22bfbd2c24575827889114c9ccd3c,_:Nebb503f8400a4e61a8982a936bb43f32,_:N48ab6d47347f490ba9d8dd2d1f5a5011,_:Neb46c440e70641b0ab80bad343fb24bc,_:N1894682ae6a44d10aa5ce8190b86b542,_:Na708e43423ea401b99508e608aad4701,_:Nbdb89a9728894b499ad8b5e357381e8b,_:N31e0c36e598944759e62a094b4880066,_:Ndbcf017059844ce399cb8dbda58efd9c,_:N93c53c3fddef40bd8000a9a69fd3cd89,_:N3fbb7105ce4c4764a976bfc0d9eaadf7,_:Nbf21d54aca964b91ad42597cb3682e64\n"
                 }
               ]
             }

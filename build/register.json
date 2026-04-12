@@ -3,12 +3,12 @@
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
   "sparqlEndpoint": "http://defs-hosted.opengis.net/fuseki-hosted/query",
-  "modified": "2026-04-09T17:57:32.843046",
+  "modified": "2026-04-12T09:47:55.839578",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"46c7348739fef1e5bde9f2eb3d2ca76e31b91ae7",
-      "shortCommitId": "\"46c734",
-      "date": "2026-04-09T11:09:34+00:00\""
+      "commitId": "\"8183e80415ce6fc50bf23df54045ccca9a1f894d",
+      "shortCommitId": "\"8183e8",
+      "date": "2026-04-10T08:50:01+00:00\""
     }
   },
   "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
@@ -30,7 +30,7 @@
       "itemClass": "model",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-04-09",
+      "dateOfLastChange": "2026-04-12",
       "tags": [
         "focal",
         "ontology",
@@ -66,7 +66,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2026-04-09",
+      "dateOfLastChange": "2026-04-12",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -120,7 +120,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2026-04-09",
+      "dateOfLastChange": "2026-04-12",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -130,8 +130,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.features.feature",
-        "ogc.focal.mySchema"
+        "ogc.focal.mySchema",
+        "ogc.geo.features.feature"
       ],
       "tags": [
         "feature",
@@ -140,11 +140,11 @@
       "group": "Examples",
       "highlighted": true,
       "shaclShapes": {
-        "ogc.geo.features.feature": [
-          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-        ],
         "ogc.focal.mySchema": [
           "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
+        ],
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
         ]
       },
       "schema": {

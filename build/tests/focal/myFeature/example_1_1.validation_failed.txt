@@ -1,5 +1,5 @@
 Validation report for ogc.focal.myFeature - Custom Feature
-Generated 2026-04-09T17:57:34.233451+00:00
+Generated 2026-04-12T09:47:57.592084+00:00
 === Files ===
 Using examples/feature.json from examples
 JSON-LD context is present - uplifting
@@ -20,23 +20,23 @@ On instance['type']:
 === End JSON Schema ===
 
 === SHACL ===
-Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:Ne4aa37c8d7904f76afa094333d0163a0,_:N40e3ea9a0013418a8734b9b365b9340e,_:Na5af7cafcbf14ee9973ab1391410d53b,_:Nff3a32f2c4664985a60eaa3abe88f469,_:N1cc125d2e94a46e283f0c1f1add2efbd,_:N4f7ccb2e4bca46eda018fe86829c2a01,_:Nfcba31b86b604ae397183185301fefd3,_:Nf02c3f11736b4de7bfcc4cfb993980e0,_:N70f859a9110e4ef184a6d77dff55219d,_:Nb5051d735d47466498a64901a816aba7,_:N380fa5f9a7aa42ee82976299824662a0,_:Ncc1a4d6cba9b4d8ea920167a08f199d3,_:N89a6d0ed61614dc0bda3af095a86709c
- - Shape geojson:GeometryShape: *none*
- - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
-
 Validation result for _sources/mySchema/rules.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for _sources/mySchema/rules.shacl:
  - Shape <https://www.ogc.org/rules/template/#testValues>: *none*
+
+Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:FeatureShape: _:N3621430d7fed4aaea1bf20aee03ae1f3,_:N67f22bfbd2c24575827889114c9ccd3c,_:Nebb503f8400a4e61a8982a936bb43f32,_:N48ab6d47347f490ba9d8dd2d1f5a5011,_:Neb46c440e70641b0ab80bad343fb24bc,_:N1894682ae6a44d10aa5ce8190b86b542,_:Na708e43423ea401b99508e608aad4701,_:Nbdb89a9728894b499ad8b5e357381e8b,_:N31e0c36e598944759e62a094b4880066,_:Ndbcf017059844ce399cb8dbda58efd9c,_:N93c53c3fddef40bd8000a9a69fd3cd89,_:N3fbb7105ce4c4764a976bfc0d9eaadf7,_:Nbf21d54aca964b91ad42597cb3682e64
 
 === End SHACL ===
 

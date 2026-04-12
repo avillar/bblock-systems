@@ -1,15 +1,16 @@
 # A short, descriptive name of this building block collection
-name: My OGC Building Blocks repository
+name: FOCAL Forest Typology OGC Smart Blocks repository
 
 # Short abstract for this collection (optional)
 abstract: |
-  This is an example text for the abstract. It should be short and to the point.
-  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+  This is an example which uses OGC Smart Blocks to define the ontology for forest typology multilingual.
 
 # Description for this collection (optional)
 description: |
-  The description can be longer. Both **the abstract** *and the description* support Markdown,
-  including [links](https://google.es).
+  # The Story
+  As a Forest Data Provider (e.g. a forestry researcher), I want to provide my "normal GIS" data, e.g. typology derived by photogrammetry / remote sensing, in a way that my data is conformant to my domain (multilingual) and can be integrate with data from another domain (e.g. climate projections) by defining clear input/output contracts. Following OGC Smart concepts, domain specific profiles can be provided by public registers to ensure public consistency. Using those profiles turns my local data into machine-interpretable knowledge that can be used to extend a distributed digital twin of forest typologies of my domain or can be automatically integrated into more cross-domain digital twins like climate-resilient reforestation simulations or processed by AI tools to generate climate-resilient reforestation recommendations.
+
+  The FOCAL Forest Typology OGC Smart Blocks repository manages an ontology for the domain specific forest typology which is in syncronisation with an official register. The URIs of the ontology are also mapped to the data schema. This mapping ensures the consistency of the distributed forest typology digital twin and adds all the meaning which the ontology is providing.  
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
 identifier-prefix: ogc.focal.

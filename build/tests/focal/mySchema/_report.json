@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.focal.mySchema - My Schema",
   "bblockName": "My Schema",
   "bblockId": "ogc.focal.mySchema",
-  "generated": "2026-04-13T10:40:29.441075+00:00",
+  "generated": "2026-04-13T12:25:31.881896+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "TEST_RESOURCE",
         "requireFail": true,
         "filename": "_sources/mySchema/tests/rules-fail.json",
-        "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/tests/rules-fail.json",
+        "url": "https://avillar.github.io/bblock-systems/_sources/mySchema/tests/rules-fail.json",
         "language": "json"
       },
       "result": true,
@@ -68,29 +68,6 @@
               "message": "ValidationError: 'LT' is a required property\n\nFailed validating 'required' in schema:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'My example schema',\n     'properties': {'CHS': {'type': 'number',\n                            'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniCHS'},\n                    'DS_OPRL': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniDSOPRL'},\n                    'ID1': {'type': 'number',\n                            'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniID1'},\n                    'LES_OBL': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOblast'},\n                    'LO_CAST': {'type': 'string',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOblastCast'},\n                    'LT': {'type': 'string',\n                           'x-jsonld-base': 'https://w3id.org/ogc/hosted/focal/lt/',\n                           'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniTyp',\n                           'x-jsonld-type': '@id'},\n                    'OVER_T': {'type': 'string',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOVERT'},\n                    'PCHS': {'type': 'string',\n                             'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniPCHS'},\n                    'PLOCHA': {'type': 'number',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniPLOCHA'},\n                    'ROK_MAP': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniROKMAP'},\n                    'SLT': {'type': 'string',\n                            'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniSLT'},\n                    'UDRZBA': {'type': 'number',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniUDRZBA'},\n                    'ZADOST': {'type': 'string',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniZADOST'},\n                    'ZMENA': {'type': 'string',\n                              'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniZMENA'}},\n     'required': ['LT'],\n     'type': 'object',\n     'x-jsonld-prefixes': {'focal-prop': 'https://w3id.org/ogc/hosted/focal/properties/'}}\n\nOn instance:\n    {'CHS': 25,\n     'DS_OPRL': 2025,\n     'ID1': 128301,\n     'LES_OBL': 8,\n     'LO_CAST': 'a',\n     'OVER_T': 'NE',\n     'PCHS': '25a',\n     'PLOCHA': 1224.24963,\n     'ROK_MAP': 2015,\n     'SLT': '2S',\n     'UDRZBA': 2022,\n     'ZADOST': '-',\n     'ZMENA': 'Uveden\u00ed do souladu s KN'}"
             }
           ]
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/mySchema/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/mySchema/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/mySchema/rules.shacl",
-              "focusNodes": {
-                "<https://www.ogc.org/rules/template/#testValues>": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
-            }
-          ]
         }
       ]
     },
@@ -99,7 +76,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/focal/mySchema/example_1_1.json",
-        "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/mySchema/example_1_1.json",
+        "url": "https://avillar.github.io/bblock-systems/build/tests/focal/mySchema/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
@@ -112,7 +89,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example.json from examples"
+              "message": "Using ../myFeatureCollection/examples/feature.json from examples"
             },
             {
               "op": "jsonld-uplift",
@@ -144,29 +121,6 @@
               "result": true,
               "isError": false,
               "message": "Validation passed"
-            }
-          ]
-        },
-        {
-          "name": "SHACL",
-          "title": "SHACL",
-          "entries": [
-            {
-              "op": "shacl-report",
-              "shaclFile": "_sources/mySchema/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/mySchema/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
-            },
-            {
-              "shaclFile": "_sources/mySchema/rules.shacl",
-              "focusNodes": {
-                "<https://www.ogc.org/rules/template/#testValues>": {
-                  "nodes": []
-                }
-              },
-              "isError": false,
-              "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
             }
           ]
         }

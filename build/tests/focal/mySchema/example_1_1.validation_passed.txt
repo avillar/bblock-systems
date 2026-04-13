@@ -1,7 +1,7 @@
 Validation report for ogc.focal.mySchema - My Schema
-Generated 2026-04-13T10:40:29.440505+00:00
+Generated 2026-04-13T12:25:31.881845+00:00
 === Files ===
-Using example.json from examples
+Using ../myFeatureCollection/examples/feature.json from examples
 JSON-LD context is present - uplifting
 Output JSON-LD example_1_1.jsonld created
 Output Turtle example_1_1.ttl created
@@ -10,14 +10,4 @@ Output Turtle example_1_1.ttl created
 === JSON Schema ===
 Validation passed
 === End JSON Schema ===
-
-=== SHACL ===
-Validation result for _sources/mySchema/rules.shacl:
-  Validation Report
-  Conforms: True
-  
-Focus nodes for _sources/mySchema/rules.shacl:
- - Shape <https://www.ogc.org/rules/template/#testValues>: *none*
-
-=== End SHACL ===
 

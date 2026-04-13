@@ -16,12 +16,12 @@
     "forestry"
   ],
   "shaclShapes": {},
-  "ontology": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/focal-ontology/ontology.ttl",
-  "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/focal-ontology/",
+  "ontology": "https://avillar.github.io/bblock-systems/build/annotated/focal/focal-ontology/ontology.ttl",
+  "sourceFiles": "https://avillar.github.io/bblock-systems/_sources/focal-ontology/",
   "rdfData": [],
   "validationPassed": true,
   "description": "## FOCAL Ontology\n\nDefines a set of properties for a forest typology uploaded directly to an official register.\n\n> Note these URIs may be mapped to properties in **any** JSON schema.\n",
   "annotatedSchema": null,
-  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
+  "gitRepository": "https://github.com/avillar/bblock-systems",
   "gitPath": "_sources/focal-ontology"
 }

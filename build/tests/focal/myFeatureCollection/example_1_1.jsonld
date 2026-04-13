@@ -1,5 +1,10 @@
 {
-  "@context": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld",
+  "@context": [
+    {
+      "mynamespace": "http://example.com/mythings/"
+    },
+    "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/context.jsonld"
+  ],
   "type": "FeatureCollection",
   "name": "example_data",
   "crs": {
@@ -12,6 +17,7 @@
     {
       "type": "Feature",
       "properties": {
+        "LT": "2S1",
         "LES_OBL": 8,
         "LO_CAST": "a",
         "UDRZBA": 2022,

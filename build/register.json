@@ -2,8 +2,7 @@
   "name": "FOCAL Forest Typology OGC Smart Blocks repository",
   "abstract": "This is an example which uses OGC Smart Blocks to define the ontology for forest typology multilingual.\n",
   "description": "### The Story\nAs a Forest Data Provider (e.g. a forestry researcher), I want to provide my \"normal GIS\" data, e.g. typology derived by photogrammetry / remote sensing, in a way that my data is conformant to my domain (multilingual) and can be integrate with data from another domain (e.g. climate projections) by defining clear input/output contracts. Following OGC Smart concepts, domain specific profiles can be provided by public registers to ensure public consistency. Using those profiles turns my local data into machine-interpretable knowledge that can be used to extend a distributed digital twin of forest typologies of my domain or can be automatically integrated into more cross-domain digital twins like climate-resilient reforestation simulations or processed by AI tools to generate climate-resilient reforestation recommendations.\n\nThe FOCAL Forest Typology OGC Smart Blocks repository manages an ontology for the domain specific forest typology which is in syncronisation with an official register. The URIs of the ontology are also mapped to the data schema. This mapping ensures the consistency of the distributed forest typology digital twin and adds all the meaning which the ontology is providing.  \n",
-  "sparqlEndpoint": "http://defs-hosted.opengis.net/fuseki-hosted/query",
-  "modified": "2026-04-13T10:40:28.453286",
+  "modified": "2026-04-13T12:25:30.500735",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"a1dc57f4c633cd8555051082178e51efa6c0b2c1",
@@ -11,12 +10,12 @@
       "date": "2026-04-13T10:28:36+00:00\""
     }
   },
-  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems",
-  "gitHubRepository": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/",
-  "baseURL": "https://markuswilhelmjahn.github.io/bblock-systems/",
-  "viewerURL": "https://markuswilhelmjahn.github.io/bblock-systems/",
-  "validationReport": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/report.html",
-  "validationReportJson": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/report.json",
+  "gitRepository": "https://github.com/avillar/bblock-systems",
+  "gitHubRepository": "https://github.com/avillar/bblock-systems/blob/master/",
+  "baseURL": "https://avillar.github.io/bblock-systems/",
+  "viewerURL": "https://avillar.github.io/bblock-systems/",
+  "validationReport": "https://avillar.github.io/bblock-systems/build/tests/report.html",
+  "validationReportJson": "https://avillar.github.io/bblock-systems/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
@@ -37,22 +36,22 @@
         "forestry"
       ],
       "shaclShapes": {},
-      "ontology": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/focal-ontology/ontology.ttl",
-      "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/focal-ontology/",
+      "ontology": "https://avillar.github.io/bblock-systems/build/annotated/focal/focal-ontology/ontology.ttl",
+      "sourceFiles": "https://avillar.github.io/bblock-systems/_sources/focal-ontology/",
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/focal-ontology/index.json"
+          "url": "https://avillar.github.io/bblock-systems/build/generateddocs/json-full/focal/focal-ontology/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/focal-ontology/index.md"
+          "url": "https://avillar.github.io/bblock-systems/build/generateddocs/markdown/focal/focal-ontology/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.focal-ontology"
+          "url": "https://avillar.github.io/bblock-systems/bblock/ogc.focal.focal-ontology"
         }
       }
     },
@@ -79,35 +78,31 @@
       "tags": [
         "templates"
       ],
-      "shaclShapes": {
-        "ogc.focal.mySchema": [
-          "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
-        ]
-      },
-      "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld",
+      "shaclShapes": {},
+      "ldContext": "https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld",
       "schema": {
-        "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml",
-        "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.json"
+        "application/yaml": "https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml",
+        "application/json": "https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/schema.json"
       },
-      "sourceSchema": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/schema.yaml",
-      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/context.jsonld",
-      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/resolvedProperties.json",
-      "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/",
+      "sourceSchema": "https://avillar.github.io/bblock-systems/_sources/mySchema/schema.yaml",
+      "sourceLdContext": "https://avillar.github.io/bblock-systems/_sources/mySchema/context.jsonld",
+      "resolvedSchemaProperties": "https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/resolvedProperties.json",
+      "sourceFiles": "https://avillar.github.io/bblock-systems/_sources/mySchema/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/focal/mySchema/",
+      "testOutputs": "https://github.com/avillar/bblock-systems/blob/master/build/tests/focal/mySchema/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/mySchema/index.json"
+          "url": "https://avillar.github.io/bblock-systems/build/generateddocs/json-full/focal/mySchema/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/mySchema/index.md"
+          "url": "https://avillar.github.io/bblock-systems/build/generateddocs/markdown/focal/mySchema/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.mySchema"
+          "url": "https://avillar.github.io/bblock-systems/bblock/ogc.focal.mySchema"
         }
       }
     },
@@ -130,8 +125,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.focal.mySchema",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.focal.mySchema"
       ],
       "tags": [
         "feature",
@@ -140,24 +135,89 @@
       "group": "Examples",
       "highlighted": true,
       "shaclShapes": {
-        "ogc.focal.mySchema": [
-          "https://markuswilhelmjahn.github.io/bblock-systems/_sources/mySchema/rules.shacl"
+        "ogc.focal.myFeature": [
+          "https://avillar.github.io/bblock-systems/_sources/myFeature/shapes.shacl"
         ],
         "ogc.geo.features.feature": [
           "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
         ]
       },
       "schema": {
-        "application/yaml": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.yaml",
-        "application/json": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/schema.json"
+        "application/yaml": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeature/schema.yaml",
+        "application/json": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeature/schema.json"
       },
-      "sourceSchema": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/schema.yaml",
-      "ldContext": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld",
-      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/myFeature/resolvedProperties.json",
-      "sourceFiles": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/",
+      "sourceSchema": "https://avillar.github.io/bblock-systems/_sources/myFeature/schema.yaml",
+      "ldContext": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld",
+      "resolvedSchemaProperties": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeature/resolvedProperties.json",
+      "sourceFiles": "https://avillar.github.io/bblock-systems/_sources/myFeature/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/avillar/bblock-systems/blob/master/build/tests/focal/myFeature/",
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/bblock-systems/build/generateddocs/json-full/focal/myFeature/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeature/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/bblock-systems/bblock/ogc.focal.myFeature"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.focal.myFeatureCollection",
+      "name": "Feature Collection for forest type",
+      "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
+      "status": "under-development",
+      "dateTimeAddition": "2023-05-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-building-block-examples",
+      "version": "1.0",
+      "dateOfLastChange": "2026-04-13",
+      "sources": [
+        {
+          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
+          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
+        }
+      ],
+      "maturity": "development",
+      "scope": "unstable",
+      "dependsOn": [
+        "ogc.focal.myFeature",
+        "ogc.geo.features.featureCollection"
+      ],
+      "tags": [
+        "feature",
+        "examples"
+      ],
+      "group": "Examples",
+      "highlighted": true,
+      "shaclShapes": {
+        "ogc.focal.myFeature": [
+          "https://avillar.github.io/bblock-systems/_sources/myFeature/shapes.shacl"
+        ],
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ],
+        "ogc.geo.features.featureCollection": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl"
+        ]
+      },
+      "schema": {
+        "application/yaml": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/schema.yaml",
+        "application/json": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/schema.json"
+      },
+      "sourceSchema": "https://avillar.github.io/bblock-systems/_sources/myFeatureCollection/schema.yaml",
+      "ldContext": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/context.jsonld",
+      "resolvedSchemaProperties": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/resolvedProperties.json",
+      "sourceFiles": "https://avillar.github.io/bblock-systems/_sources/myFeatureCollection/",
       "rdfData": [],
       "validationPassed": false,
-      "testOutputs": "https://github.com/MarkusWilhelmJahn/bblock-systems/blob/master/build/tests/focal/myFeature/",
+      "testOutputs": "https://github.com/avillar/bblock-systems/blob/master/build/tests/focal/myFeatureCollection/",
       "transforms": [
         {
           "id": "to-crs5555",
@@ -189,42 +249,43 @@
               "mynamespace": "http://example.com/mythings/"
             }
           },
-          "code": "import json, geopandas as gpd\n\ndata = json.loads(input_data)\n\n# Extract CRS\ncrs_name = data.get(\"crs\", {}).get(\"properties\", {}).get(\"name\")\nepsg_code = crs_name.split(\":\")[-1] if crs_name else None\n\n# Create GeoDataFrame from GeoJSON-like dict\ngdf = gpd.GeoDataFrame.from_features(data[\"features\"])\n\n# Set CRS dynamically\nif epsg_code:\n  gdf.set_crs(epsg=int(epsg_code), inplace=True)\n\n# Print current CRS\nprint(\"Transform from CRS\" + str(gdf.crs))\n\n# Transform to another CRS (example: ETRS89)\ngdf = gdf.to_crs(epsg=5555)\n\n# Print current CRS\nprint(\"            to CRS\" + str(gdf.crs))\n\n# Convert back to GeoJSON-like dict\noutput_data = gdf.to_json()"
+          "ref": "https://avillar.github.io/bblock-systems/_sources/myFeatureCollection/transforms/crs-5555.py",
+          "code": "import json, geopandas as gpd\n\ndata = json.loads(input_data)\n\n# Normalize: wrap a single Feature into a FeatureCollection\nis_feature = data.get(\"type\") == \"Feature\"\nif is_feature:\n    data = {\"type\": \"FeatureCollection\", \"features\": [data], \"crs\": data.get(\"crs\")}\n\n# Extract CRS\ncrs_name = data.get(\"crs\", {}).get(\"properties\", {}).get(\"name\")\nepsg_code = crs_name.split(\":\")[-1] if crs_name else None\n\n# Create GeoDataFrame from GeoJSON-like dict\ngdf = gpd.GeoDataFrame.from_features(data[\"features\"])\n\n# Set CRS dynamically\nif epsg_code:\n    gdf.set_crs(epsg=int(epsg_code), inplace=True)\n\n# Print current CRS\nprint(\"Transform from CRS\" + str(gdf.crs))\n\n# Transform to another CRS (example: ETRS89)\ngdf = gdf.to_crs(epsg=5555)\n\n# Print current CRS\nprint(\"            to CRS\" + str(gdf.crs))\n\n# Convert back to GeoJSON \u2014 unwrap back to a single Feature if input was one\nresult = json.loads(gdf.to_json())\nif is_feature == 1:\n    output_data = json.dumps(result[\"features\"][0], indent=2)\nelse:\n    output_data = gdf.to_json(indent=2)\n"
         }
       ],
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/json-full/focal/myFeature/index.json"
+          "url": "https://avillar.github.io/bblock-systems/build/generateddocs/json-full/focal/myFeatureCollection/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeature/index.md"
+          "url": "https://avillar.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeatureCollection/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://markuswilhelmjahn.github.io/bblock-systems/bblock/ogc.focal.myFeature"
+          "url": "https://avillar.github.io/bblock-systems/bblock/ogc.focal.myFeatureCollection"
         }
       }
     }
   ],
-  "remoteCacheDir": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/_cache",
+  "remoteCacheDir": "https://avillar.github.io/bblock-systems/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://markuswilhelmjahn.github.io/bblock-systems/build/register.json",
+      "href": "https://avillar.github.io/bblock-systems/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.ttl",
+      "href": "https://avillar.github.io/bblock-systems/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://markuswilhelmjahn.github.io/bblock-systems/build/bblocks.jsonld",
+      "href": "https://avillar.github.io/bblock-systems/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }

@@ -64,9 +64,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-04-13T10:40:42.578700+00:00</small>
+            <small class="datetime">Generated at 2026-04-13T12:25:45.971866+00:00</small>
                 <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 2 / 3 (66.67%)
+                    Number of passing building blocks: 3 / 4 (75%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -199,14 +199,6 @@ On instance:
      &#x27;UDRZBA&#x27;: 2022,
      &#x27;ZADOST&#x27;: &#x27;-&#x27;,
      &#x27;ZMENA&#x27;: &#x27;Uvedení do souladu s KN&#x27;}</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/rules.shacl:
- - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: *none*
-</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -231,20 +223,12 @@ On instance:
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-2">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using ../myFeatureCollection/examples/feature.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/rules.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/rules.shacl:
- - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: *none*
-</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -254,7 +238,7 @@ On instance:
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.focal.myFeature" id="bblock-ogc.focal.myFeature">
                             <h2 class="accordion-header bblock-title anchor-container">
-                                <button class="accordion-button " type="button"
+                                <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.focal\.myFeature">
                                     <div class="flex-fill">
@@ -263,16 +247,16 @@ On instance:
                                         <a class="anchor" href="#bblock-ogc.focal.myFeature">¶</a>
                                     </div>
 
-                                    <span class="badge text-bg-danger me-2">
-                                            Tests Failed
-                                            (33.33% passed)
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.focal.myFeature">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.focal.myFeature">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-danger">
-                                            Test passed: 1 / 3
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 2 / 2
                                         </p>
                                         <div class="card mb-2 validation-item require-fail" id="item-ogc.focal.myFeature-1">
                                             <div class="card-body">
@@ -310,22 +294,29 @@ Failed validating &#x27;enum&#x27; in schema[0][&#x27;allOf&#x27;][0][&#x27;allO
 On instance[&#x27;type&#x27;]:
     &#x27;FeatureCollection&#x27;</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/myFeature/shapes.shacl:
   Validation Report
-  Conforms: True
+  Conforms: False
+  Results (1):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:message Literal(&quot;Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource.&quot;) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:name Literal(&quot;lesniTyp&quot;) ; sh:nodeKind sh:IRI ; sh:path focal-prop:lesniTyp ]
+  	Focus Node: [ geojson:features [ focal-prop:lesniCHS Literal(&quot;0&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;146028&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;0&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;541.04608&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2000&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;NE&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/NE&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2000&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;-&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;19&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;137152&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;19c&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;2252.11992&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2000&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2L&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2L1&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;-&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;19&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;137153&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;19c&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;1273.82468&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2000&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2L&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2L1&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;-&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;19&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;137154&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;19c&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;8035.37305&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2000&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2L&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2L1&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;-&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;19&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;137155&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;19c&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;1454.86319&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2000&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2L&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2L1&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;-&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;23&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;128309&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;23a&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;34728.28615&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2015&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2I&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2I2&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;Uvedení do souladu s KN&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;23&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;128310&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;23a&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;21119.17111&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2015&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2I&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2I2&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;Uvedení do souladu s KN&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;25&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;128301&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;25a&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;1224.24963&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2015&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2S&quot;) ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;Uvedení do souladu s KN&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;25&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;128302&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;25a&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;320.98819&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2015&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2S&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2S1&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;Uvedení do souladu s KN&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;25&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;128303&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;25a&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;683.07854&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2015&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2S&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2S1&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;Uvedení do souladu s KN&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;25&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;128304&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;25a&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;47755.8343&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2015&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2S&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2S1&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;Uvedení do souladu s KN&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;25&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;128305&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;25a&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;778.34656&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2015&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2S&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2S1&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;Uvedení do souladu s KN&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(&quot;25&quot;, datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(&quot;2025&quot;, datatype=xsd:integer) ; focal-prop:lesniID1 Literal(&quot;128306&quot;, datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(&quot;NE&quot;) ; focal-prop:lesniOblast Literal(&quot;8&quot;, datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(&quot;a&quot;) ; focal-prop:lesniPCHS Literal(&quot;25a&quot;) ; focal-prop:lesniPLOCHA Literal(&quot;5548.89805&quot;, datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(&quot;2015&quot;, datatype=xsd:integer) ; focal-prop:lesniSLT Literal(&quot;2S&quot;) ; focal-prop:lesniTyp &lt;https://w3id.org/ogc/hosted/focal/lt/2S1&gt; ; focal-prop:lesniUDRZBA Literal(&quot;2022&quot;, datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(&quot;-&quot;) ; focal-prop:lesniZMENA Literal(&quot;Uvedení do souladu s KN&quot;) ; geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ] ; rdf:type geojson:FeatureCollection ]
+  	Result Path: focal-prop:lesniTyp
+  	Message: Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource.
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/rules.shacl:
- - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/myFeature/shapes.shacl:
+ - Shape focal-prop:FeatureCollectionShape: _:N0722b0ed7a114b368556893201e55661
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: _:N57914d4ce2a4488ea55f52a14a618ca8,_:N18d6c8770b28479ea26fa2c34afbd81b,_:Necace6d876b94ab5996819f5acf3bc1b,_:N9ce0feed01454a6a9a720e0529e4ffd4,_:Ndff008368a8d4942aa852cab5ccfd5ad,_:N349b02b061fd4864b061299b17b93668,_:Ne11c2a98ca154b0486dea908cbf33d9a,_:N1c7727a81a3d41438510e18ef73d93aa,_:N302d9191a0ad4597a65dae3c0f4f7432,_:N1ecc36205d154752b6af995c8e48653a,_:N9c08db657df2473e9ebb162b79c0c500,_:N575b698da5cb4f809064e15d4277e6b8,_:Nca0437e9587f4fee85f4c97034abf4ec
- - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: _:N2a276844113b416d937e9cedd070e7c1,_:N27072f753c9b498182f83825c36eb863,_:N5c623d22d3e74d82a3c57bc8f48c0e68,_:Nc996bfb1c9904378b0cbd4b704a81cd0,_:N887c2f63c79a425db335ccdfea63a464,_:N9d0eddc671aa408f84d44c2bcfcb3491,_:Nf7ab41676613491b9a27e8550d3e075a,_:Nbae21979874f4d8e8654c4623e54966c,_:Nef03ae292e454abda62e25fb16a5f7d3,_:Ne2aa8f81fae84b94a977e1d068f31a11,_:Ne2b6694dfe9749bcb67c1da8be9523f1,_:N4465cd21ca0d4a0295fb98e4f5567a75,_:Na2bea38ce2a9454483de2390f6cff2e2
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 </div>
                                                     </div>
@@ -346,48 +337,67 @@ On instance[&#x27;type&#x27;]:
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <a class="anchor" href="#item-ogc.focal.myFeature-2">¶</a>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using examples/feature.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using ../myFeatureCollection/examples/feature.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;FeatureCollection&#x27; is not one of [&#x27;Feature&#x27;]
-
-Failed validating &#x27;enum&#x27; in schema[0][&#x27;allOf&#x27;][0][&#x27;allOf&#x27;][0][&#x27;properties&#x27;][&#x27;type&#x27;]:
-    {&#x27;enum&#x27;: [&#x27;Feature&#x27;], &#x27;type&#x27;: &#x27;string&#x27;, &#x27;x-jsonld-id&#x27;: &#x27;@type&#x27;}
-
-On instance[&#x27;type&#x27;]:
-    &#x27;FeatureCollection&#x27;</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                                     <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/rules.shacl:
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/myFeature/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/rules.shacl:
- - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: *none*
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/myFeature/shapes.shacl:
+ - Shape focal-prop:FeatureCollectionShape: *none*
 </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   </div>
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:LinkShape: *none*
- - Shape geojson:FeatureShape: _:Nd02c7f0040504be481b4ea2ca89aeedd,_:N873f2e0daf764aee975560e1e002ba71,_:N24f113fe9cad4386bbb23ba4d121f0e6,_:N36ca7c94a8434d2c92f9950dde3655a1,_:N7ca694408af74a328c54b2242084019d,_:N8695526aaced4220a1bd7d0c9c6a569d,_:Nfab2e2dad8194d469cda512357434658,_:Na9bee232c22243fc917bbd9917d0b569,_:N4c2012bc1f7543e9a1880eb00b6d068a,_:Nca0aaadb70fd4aafa3ae46d801ecaaa6,_:Ne08d40e4d2ed40c999871cdf4faa4d80,_:N57e21ed460a749d9b0b3944711558c1e,_:N8423266ff75047dca4635957878a63b3
- - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: _:Ne07bd7b7da774e408c402802d4c03c8d
  - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
 </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item " id="item-ogc.focal.myFeature-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.focal.myFeatureCollection" id="bblock-ogc.focal.myFeatureCollection">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button " type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-ogc\.focal\.myFeatureCollection">
+                                    <div class="flex-fill">
+                                        Feature Collection for forest type
+                                        <small class="ms-2 bblock-id">ogc.focal.myFeatureCollection</small>
+                                        <a class="anchor" href="#bblock-ogc.focal.myFeatureCollection">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (50% passed)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.focal.myFeatureCollection">
+                                <div class="accordion-body">
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 1 / 2
+                                        </p>
+                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.focal.myFeatureCollection-1">
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
@@ -397,17 +407,23 @@ On instance[&#x27;type&#x27;]:
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="focal/myFeature/example_1_2.yaml" target="_blank">example_1_2.yaml</a>
-                                                    <span class="badge bg-secondary example">Example</span>
-                                                    <a class="anchor" href="#item-ogc.focal.myFeature-3">¶</a>
+                                                    <a href="../../_sources/myFeatureCollection/tests/feature-fail.json" target="_blank">feature-fail.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <a class="anchor" href="#item-ogc.focal.myFeatureCollection-1">¶</a>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_2.yaml from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using feature-fail.json from test resources</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD feature-fail.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle feature-fail.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;LT&#x27; is a required property
 
@@ -449,7 +465,125 @@ Failed validating &#x27;required&#x27; in schema[0][&#x27;allOf&#x27;][1][&#x27;
      &#x27;x-jsonld-prefixes&#x27;: {&#x27;focal-prop&#x27;: &#x27;https://w3id.org/ogc/hosted/focal/properties/&#x27;}}
 
 On instance[&#x27;properties&#x27;]:
-    {&#x27;a&#x27;: &#x27;mynamespace:aThing&#x27;, &#x27;b&#x27;: 23, &#x27;c&#x27;: 0.1}</div>
+    {&#x27;CHS&#x27;: 25,
+     &#x27;DS_OPRL&#x27;: 2025,
+     &#x27;ID1&#x27;: 128301,
+     &#x27;LES_OBL&#x27;: 8,
+     &#x27;LO_CAST&#x27;: &#x27;a&#x27;,
+     &#x27;OVER_T&#x27;: &#x27;NE&#x27;,
+     &#x27;PCHS&#x27;: &#x27;25a&#x27;,
+     &#x27;PLOCHA&#x27;: 1224.24963,
+     &#x27;ROK_MAP&#x27;: 2015,
+     &#x27;SLT&#x27;: &#x27;2S&#x27;,
+     &#x27;UDRZBA&#x27;: 2022,
+     &#x27;ZADOST&#x27;: &#x27;-&#x27;,
+     &#x27;ZMENA&#x27;: &#x27;Uvedení do souladu s KN&#x27;}</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/myFeature/shapes.shacl:
+  Validation Report
+  Conforms: False
+  Results (1):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:message Literal(&quot;Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource.&quot;) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:name Literal(&quot;lesniTyp&quot;) ; sh:nodeKind sh:IRI ; sh:path focal-prop:lesniTyp ]
+  	Focus Node: [ geojson:features [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ] ; rdf:type geojson:FeatureCollection ]
+  	Result Path: focal-prop:lesniTyp
+  	Message: Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource.
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/myFeature/shapes.shacl:
+ - Shape focal-prop:FeatureCollectionShape: _:N6fcafd0ebfbc4bbab95f301bb5306f00
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:Nf1a709cb596846bcbf6dc4b615b273f6,_:N423ba51fd82f4f649edd9eebb0a89150,_:N21f861fe20ef44d5887d7577ded7d7fa,_:Nd6dfe0cd30844416ae0fa66f168f34c6,_:Nbf2e37d5223041dea8b037a11ee013be,_:N35cbac5b049343538e8238b039369d22,_:N748d9cf4251d4813822152ba7e759ea2,_:N367327610dba481a8c317a6618610187,_:N5e42e06a9c9a44efaaedb5b4a6e9ad54,_:Nd3d93bf1b1874977acea60c584da8f07,_:Nad95146779464ba69cfc9b01c080b382,_:N3f4b644ab25c403282cb7e336d305f40,_:N27cfe756676744f487e8fa1b625e19f4
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: _:N6fcafd0ebfbc4bbab95f301bb5306f00
+ - Shape geojson:GeometryShape: *none*
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item " id="item-ogc.focal.myFeatureCollection-2">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-6"
+                                                            aria-expanded="false" aria-controls="uid-6"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="focal/myFeatureCollection/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.focal.myFeatureCollection-2">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/feature.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/myFeature/shapes.shacl:
+  Validation Report
+  Conforms: False
+  Results (1):
+  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+  	Severity: sh:Violation
+  	Source Shape: [ sh:message Literal(&quot;Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource.&quot;) ; sh:minCount Literal(&quot;1&quot;, datatype=xsd:integer) ; sh:name Literal(&quot;lesniTyp&quot;) ; sh:nodeKind sh:IRI ; sh:path focal-prop:lesniTyp ]
+  	Focus Node: [ geojson:features [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ geojson:geometry [ geojson:coordinates ( &lt;http://recursion.too.deep&gt; ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ] ; rdf:type geojson:FeatureCollection ]
+  	Result Path: focal-prop:lesniTyp
+  	Message: Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource.
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/myFeature/shapes.shacl:
+ - Shape focal-prop:FeatureCollectionShape: _:Ndfbb65705447409eab453eaea727ad27
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureShape: _:Na38cf0f9ef0543a19fc90543f7169467,_:N8642245c47904220bc22c0324276154b,_:N019d99002c604ea7a1956ed10ce0e0f7,_:Na72ada764ac64d3ca741000cea6d1a60,_:N9b1c5bdb130442779b54646c63511dab,_:N05b7f9fcc4134e5eb1c682ac2a9bd4ed,_:N41b5c4b8333f44c784c8a3c946b10d3a,_:Naca80dccfba94d18ae79fa564655ac29,_:N9dab3de10131466fb031e3e88af5729e,_:N8a41d18612b9485aac3bf72995cf6d44,_:N621aee27ee9c4aadbb5470fa8454cd5a,_:Nff58b4ee57644d62bf93266b5fc627c3,_:N1128ceec63384a9b9ffe3cbbd74c34eb
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+</div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl:
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: *none*
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:FeatureCollectionShape: _:Ndfbb65705447409eab453eaea727ad27
+ - Shape geojson:GeometryShape: *none*
+</div>
                                                     </div>
                                                 </div>
                                             </div>

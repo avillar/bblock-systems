@@ -28,7 +28,7 @@ In **Markdown** format.
   "LES_OBL": 8,
   "LO_CAST": "a",
   "UDRZBA": 2022,
-  "ZMENA": "Uvedení do souladu s KN",
+  "ZMENA": "Uveden\u00ed do souladu s KN",
   "ZADOST": "-",
   "CHS": 25,
   "PCHS": "25a",
@@ -39,8 +39,6 @@ In **Markdown** format.
   "PLOCHA": 1224.24963,
   "DS_OPRL": 2025
 }
-
-
 ```
 
 #### jsonld
@@ -50,7 +48,7 @@ In **Markdown** format.
     {
       "mynamespace": "http://example.com/mythings/"
     },
-    "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld"
+    "https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld"
   ],
   "LT": "2S1",
   "LES_OBL": 8,
@@ -90,24 +88,6 @@ In **Markdown** format.
     focal-prop:lesniZMENA "Uvedení do souladu s KN" .
 
 
-```
-
-
-### Examples can have content and/or code snippets.
-The content of this example. 
-#### shell
-```shell
-echo 'Hello, world!'
-```
-
-#### python
-```python
-print('Hello, world!')
-```
-
-#### javascript
-```javascript
-console.log('Hello, world!')
 ```
 
 ## Schema
@@ -170,8 +150,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.json)
-* JSON version: [schema.json](https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml)
+* YAML version: [schema.yaml](https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/schema.json)
+* JSON version: [schema.json](https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml)
 
 
 # JSON-LD Context
@@ -206,7 +186,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld)
+[context.jsonld](https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld)
 
 ## Sources
 
@@ -216,6 +196,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/MarkusWilhelmJahn/bblock-systems](https://github.com/MarkusWilhelmJahn/bblock-systems)
+* URL: [https://github.com/avillar/bblock-systems](https://github.com/avillar/bblock-systems)
 * Path: `_sources/mySchema`
 

@@ -2,15 +2,15 @@
   "title": "Validation report for ogc.focal.myFeature - Custom Feature",
   "bblockName": "Custom Feature",
   "bblockId": "ogc.focal.myFeature",
-  "generated": "2026-04-13T10:40:30.177737+00:00",
-  "result": false,
+  "generated": "2026-04-13T12:25:32.291791+00:00",
+  "result": true,
   "items": [
     {
       "source": {
         "type": "TEST_RESOURCE",
         "requireFail": true,
         "filename": "_sources/myFeature/tests/feature-fail.json",
-        "url": "https://markuswilhelmjahn.github.io/bblock-systems/_sources/myFeature/tests/feature-fail.json",
+        "url": "https://avillar.github.io/bblock-systems/_sources/myFeature/tests/feature-fail.json",
         "language": "json"
       },
       "result": true,
@@ -75,20 +75,22 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/mySchema/rules.shacl",
-              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
-              "isError": false,
-              "message": "Validation result for _sources/mySchema/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "shaclFile": "_sources/myFeature/shapes.shacl",
+              "graph": "@prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode [ a geojson:FeatureCollection ;\n                    geojson:features [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 25 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 128302 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"25a\" ;\n                            focal-prop:lesniPLOCHA 3.209882e+02 ;\n                            focal-prop:lesniROKMAP 2015 ;\n                            focal-prop:lesniSLT \"2S\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"Uveden\u00ed do souladu s KN\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 19 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 137153 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"19c\" ;\n                            focal-prop:lesniPLOCHA 1.273825e+03 ;\n                            focal-prop:lesniROKMAP 2000 ;\n                            focal-prop:lesniSLT \"2L\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2L1> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"-\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 23 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 128310 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"23a\" ;\n                            focal-prop:lesniPLOCHA 2.111917e+04 ;\n                            focal-prop:lesniROKMAP 2015 ;\n                            focal-prop:lesniSLT \"2I\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2I2> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"Uveden\u00ed do souladu s KN\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 19 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 137152 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"19c\" ;\n                            focal-prop:lesniPLOCHA 2.25212e+03 ;\n                            focal-prop:lesniROKMAP 2000 ;\n                            focal-prop:lesniSLT \"2L\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2L1> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"-\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 25 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 128305 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"25a\" ;\n                            focal-prop:lesniPLOCHA 7.783466e+02 ;\n                            focal-prop:lesniROKMAP 2015 ;\n                            focal-prop:lesniSLT \"2S\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"Uveden\u00ed do souladu s KN\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 0 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 146028 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"0\" ;\n                            focal-prop:lesniPLOCHA 5.410461e+02 ;\n                            focal-prop:lesniROKMAP 2000 ;\n                            focal-prop:lesniSLT \"NE\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/NE> ;\n                            focal-prop:lesniUDRZBA 2000 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"-\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 23 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 128309 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"23a\" ;\n                            focal-prop:lesniPLOCHA 3.472829e+04 ;\n                            focal-prop:lesniROKMAP 2015 ;\n                            focal-prop:lesniSLT \"2I\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2I2> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"Uveden\u00ed do souladu s KN\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 19 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 137155 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"19c\" ;\n                            focal-prop:lesniPLOCHA 1.454863e+03 ;\n                            focal-prop:lesniROKMAP 2000 ;\n                            focal-prop:lesniSLT \"2L\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2L1> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"-\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 25 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 128303 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"25a\" ;\n                            focal-prop:lesniPLOCHA 6.830785e+02 ;\n                            focal-prop:lesniROKMAP 2015 ;\n                            focal-prop:lesniSLT \"2S\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"Uveden\u00ed do souladu s KN\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 25 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 128306 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"25a\" ;\n                            focal-prop:lesniPLOCHA 5.548898e+03 ;\n                            focal-prop:lesniROKMAP 2015 ;\n                            focal-prop:lesniSLT \"2S\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"Uveden\u00ed do souladu s KN\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 25 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 128304 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"25a\" ;\n                            focal-prop:lesniPLOCHA 4.775583e+04 ;\n                            focal-prop:lesniROKMAP 2015 ;\n                            focal-prop:lesniSLT \"2S\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"Uveden\u00ed do souladu s KN\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 25 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 128301 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"25a\" ;\n                            focal-prop:lesniPLOCHA 1.22425e+03 ;\n                            focal-prop:lesniROKMAP 2015 ;\n                            focal-prop:lesniSLT \"2S\" ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"Uveden\u00ed do souladu s KN\" ],\n                        [ a geojson:Feature ;\n                            geojson:geometry [ a geojson:MultiPolygon ;\n                                    geojson:coordinates ( ( [ ] ) ) ] ;\n                            focal-prop:lesniCHS 19 ;\n                            focal-prop:lesniDSOPRL 2025 ;\n                            focal-prop:lesniID1 137154 ;\n                            focal-prop:lesniOVERT \"NE\" ;\n                            focal-prop:lesniOblast 8 ;\n                            focal-prop:lesniOblastCast \"a\" ;\n                            focal-prop:lesniPCHS \"19c\" ;\n                            focal-prop:lesniPLOCHA 8.035373e+03 ;\n                            focal-prop:lesniROKMAP 2000 ;\n                            focal-prop:lesniSLT \"2L\" ;\n                            focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2L1> ;\n                            focal-prop:lesniUDRZBA 2022 ;\n                            focal-prop:lesniZADOST \"-\" ;\n                            focal-prop:lesniZMENA \"-\" ] ] ;\n            sh:resultMessage \"Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource.\" ;\n            sh:resultPath focal-prop:lesniTyp ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;\n            sh:sourceShape [ sh:message \"Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource.\" ;\n                    sh:minCount 1 ;\n                    sh:name \"lesniTyp\" ;\n                    sh:nodeKind sh:IRI ;\n                    sh:path focal-prop:lesniTyp ] ] .\n\n",
+              "isError": true,
+              "message": "Validation result for _sources/myFeature/shapes.shacl:\n  Validation Report\n  Conforms: False\n  Results (1):\n  Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n  \tSeverity: sh:Violation\n  \tSource Shape: [ sh:message Literal(\"Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource.\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:name Literal(\"lesniTyp\") ; sh:nodeKind sh:IRI ; sh:path focal-prop:lesniTyp ]\n  \tFocus Node: [ geojson:features [ focal-prop:lesniCHS Literal(\"0\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"146028\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"0\") ; focal-prop:lesniPLOCHA Literal(\"541.04608\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2000\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"NE\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/NE> ; focal-prop:lesniUDRZBA Literal(\"2000\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"-\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"19\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"137152\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"19c\") ; focal-prop:lesniPLOCHA Literal(\"2252.11992\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2000\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2L\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2L1> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"-\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"19\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"137153\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"19c\") ; focal-prop:lesniPLOCHA Literal(\"1273.82468\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2000\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2L\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2L1> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"-\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"19\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"137154\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"19c\") ; focal-prop:lesniPLOCHA Literal(\"8035.37305\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2000\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2L\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2L1> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"-\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"19\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"137155\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"19c\") ; focal-prop:lesniPLOCHA Literal(\"1454.86319\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2000\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2L\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2L1> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"-\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"23\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"128309\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"23a\") ; focal-prop:lesniPLOCHA Literal(\"34728.28615\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2015\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2I\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2I2> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"Uveden\u00ed do souladu s KN\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"23\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"128310\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"23a\") ; focal-prop:lesniPLOCHA Literal(\"21119.17111\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2015\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2I\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2I2> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"Uveden\u00ed do souladu s KN\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"25\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"128301\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"25a\") ; focal-prop:lesniPLOCHA Literal(\"1224.24963\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2015\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2S\") ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"Uveden\u00ed do souladu s KN\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"25\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"128302\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"25a\") ; focal-prop:lesniPLOCHA Literal(\"320.98819\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2015\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2S\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"Uveden\u00ed do souladu s KN\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"25\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"128303\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"25a\") ; focal-prop:lesniPLOCHA Literal(\"683.07854\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2015\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2S\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"Uveden\u00ed do souladu s KN\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"25\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"128304\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"25a\") ; focal-prop:lesniPLOCHA Literal(\"47755.8343\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2015\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2S\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"Uveden\u00ed do souladu s KN\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"25\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"128305\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"25a\") ; focal-prop:lesniPLOCHA Literal(\"778.34656\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2015\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2S\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"Uveden\u00ed do souladu s KN\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ], [ focal-prop:lesniCHS Literal(\"25\", datatype=xsd:integer) ; focal-prop:lesniDSOPRL Literal(\"2025\", datatype=xsd:integer) ; focal-prop:lesniID1 Literal(\"128306\", datatype=xsd:integer) ; focal-prop:lesniOVERT Literal(\"NE\") ; focal-prop:lesniOblast Literal(\"8\", datatype=xsd:integer) ; focal-prop:lesniOblastCast Literal(\"a\") ; focal-prop:lesniPCHS Literal(\"25a\") ; focal-prop:lesniPLOCHA Literal(\"5548.89805\", datatype=xsd:double) ; focal-prop:lesniROKMAP Literal(\"2015\", datatype=xsd:integer) ; focal-prop:lesniSLT Literal(\"2S\") ; focal-prop:lesniTyp <https://w3id.org/ogc/hosted/focal/lt/2S1> ; focal-prop:lesniUDRZBA Literal(\"2022\", datatype=xsd:integer) ; focal-prop:lesniZADOST Literal(\"-\") ; focal-prop:lesniZMENA Literal(\"Uveden\u00ed do souladu s KN\") ; geojson:geometry [ geojson:coordinates ( <http://recursion.too.deep> ) ; rdf:type geojson:MultiPolygon ] ; rdf:type geojson:Feature ] ; rdf:type geojson:FeatureCollection ]\n  \tResult Path: focal-prop:lesniTyp\n  \tMessage: Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource.\n  "
             },
             {
-              "shaclFile": "_sources/mySchema/rules.shacl",
+              "shaclFile": "_sources/myFeature/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/template/#testValues>": {
-                  "nodes": []
+                "focal-prop:FeatureCollectionShape": {
+                  "nodes": [
+                    "_:N0722b0ed7a114b368556893201e55661"
+                  ]
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
+              "message": "Focus nodes for _sources/myFeature/shapes.shacl:\n - Shape focal-prop:FeatureCollectionShape: _:N0722b0ed7a114b368556893201e55661\n"
             },
             {
               "op": "shacl-report",
@@ -100,30 +102,30 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "_:N2a276844113b416d937e9cedd070e7c1",
+                    "_:N27072f753c9b498182f83825c36eb863",
+                    "_:N5c623d22d3e74d82a3c57bc8f48c0e68",
+                    "_:Nc996bfb1c9904378b0cbd4b704a81cd0",
+                    "_:N887c2f63c79a425db335ccdfea63a464",
+                    "_:N9d0eddc671aa408f84d44c2bcfcb3491",
+                    "_:Nf7ab41676613491b9a27e8550d3e075a",
+                    "_:Nbae21979874f4d8e8654c4623e54966c",
+                    "_:Nef03ae292e454abda62e25fb16a5f7d3",
+                    "_:Ne2aa8f81fae84b94a977e1d068f31a11",
+                    "_:Ne2b6694dfe9749bcb67c1da8be9523f1",
+                    "_:N4465cd21ca0d4a0295fb98e4f5567a75",
+                    "_:Na2bea38ce2a9454483de2390f6cff2e2"
+                  ]
+                },
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
                 "geojson:LinkShape": {
                   "nodes": []
                 },
-                "geojson:FeatureShape": {
-                  "nodes": [
-                    "_:N57914d4ce2a4488ea55f52a14a618ca8",
-                    "_:N18d6c8770b28479ea26fa2c34afbd81b",
-                    "_:Necace6d876b94ab5996819f5acf3bc1b",
-                    "_:N9ce0feed01454a6a9a720e0529e4ffd4",
-                    "_:Ndff008368a8d4942aa852cab5ccfd5ad",
-                    "_:N349b02b061fd4864b061299b17b93668",
-                    "_:Ne11c2a98ca154b0486dea908cbf33d9a",
-                    "_:N1c7727a81a3d41438510e18ef73d93aa",
-                    "_:N302d9191a0ad4597a65dae3c0f4f7432",
-                    "_:N1ecc36205d154752b6af995c8e48653a",
-                    "_:N9c08db657df2473e9ebb162b79c0c500",
-                    "_:N575b698da5cb4f809064e15d4277e6b8",
-                    "_:Nca0437e9587f4fee85f4c97034abf4ec"
-                  ]
-                },
                 "geojson:GeometryShape": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
                 "geojson:GeometryShape/sh:or/rdf:first": {
@@ -131,7 +133,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: _:N57914d4ce2a4488ea55f52a14a618ca8,_:N18d6c8770b28479ea26fa2c34afbd81b,_:Necace6d876b94ab5996819f5acf3bc1b,_:N9ce0feed01454a6a9a720e0529e4ffd4,_:Ndff008368a8d4942aa852cab5ccfd5ad,_:N349b02b061fd4864b061299b17b93668,_:Ne11c2a98ca154b0486dea908cbf33d9a,_:N1c7727a81a3d41438510e18ef73d93aa,_:N302d9191a0ad4597a65dae3c0f4f7432,_:N1ecc36205d154752b6af995c8e48653a,_:N9c08db657df2473e9ebb162b79c0c500,_:N575b698da5cb4f809064e15d4277e6b8,_:Nca0437e9587f4fee85f4c97034abf4ec\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: _:N2a276844113b416d937e9cedd070e7c1,_:N27072f753c9b498182f83825c36eb863,_:N5c623d22d3e74d82a3c57bc8f48c0e68,_:Nc996bfb1c9904378b0cbd4b704a81cd0,_:N887c2f63c79a425db335ccdfea63a464,_:N9d0eddc671aa408f84d44c2bcfcb3491,_:Nf7ab41676613491b9a27e8550d3e075a,_:Nbae21979874f4d8e8654c4623e54966c,_:Nef03ae292e454abda62e25fb16a5f7d3,_:Ne2aa8f81fae84b94a977e1d068f31a11,_:Ne2b6694dfe9749bcb67c1da8be9523f1,_:N4465cd21ca0d4a0295fb98e4f5567a75,_:Na2bea38ce2a9454483de2390f6cff2e2\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
             }
           ]
         }
@@ -142,12 +144,12 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/focal/myFeature/example_1_1.json",
-        "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/myFeature/example_1_1.json",
+        "url": "https://avillar.github.io/bblock-systems/build/tests/focal/myFeature/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
       },
-      "result": false,
+      "result": true,
       "sections": [
         {
           "name": "FILES",
@@ -155,7 +157,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using examples/feature.json from examples"
+              "message": "Using ../myFeatureCollection/examples/feature.json from examples"
             },
             {
               "op": "jsonld-uplift",
@@ -172,7 +174,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 2172,
+              "size": 118,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }
@@ -184,11 +186,9 @@
           "entries": [
             {
               "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'FeatureCollection' is not one of ['Feature']",
-              "isError": true,
-              "message": "ValidationError: 'FeatureCollection' is not one of ['Feature']\n\nFailed validating 'enum' in schema[0]['allOf'][0]['allOf'][0]['properties']['type']:\n    {'enum': ['Feature'], 'type': 'string', 'x-jsonld-id': '@type'}\n\nOn instance['type']:\n    'FeatureCollection'"
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
             }
           ]
         },
@@ -198,20 +198,20 @@
           "entries": [
             {
               "op": "shacl-report",
-              "shaclFile": "_sources/mySchema/rules.shacl",
+              "shaclFile": "_sources/myFeature/shapes.shacl",
               "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
               "isError": false,
-              "message": "Validation result for _sources/mySchema/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+              "message": "Validation result for _sources/myFeature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
             },
             {
-              "shaclFile": "_sources/mySchema/rules.shacl",
+              "shaclFile": "_sources/myFeature/shapes.shacl",
               "focusNodes": {
-                "<https://www.ogc.org/rules/template/#testValues>": {
+                "focal-prop:FeatureCollectionShape": {
                   "nodes": []
                 }
               },
               "isError": false,
-              "message": "Focus nodes for _sources/mySchema/rules.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: *none*\n"
+              "message": "Focus nodes for _sources/myFeature/shapes.shacl:\n - Shape focal-prop:FeatureCollectionShape: *none*\n"
             },
             {
               "op": "shacl-report",
@@ -223,30 +223,18 @@
             {
               "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
               "focusNodes": {
+                "geojson:FeatureShape": {
+                  "nodes": [
+                    "_:Ne07bd7b7da774e408c402802d4c03c8d"
+                  ]
+                },
+                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                  "nodes": []
+                },
                 "geojson:LinkShape": {
                   "nodes": []
                 },
-                "geojson:FeatureShape": {
-                  "nodes": [
-                    "_:Nd02c7f0040504be481b4ea2ca89aeedd",
-                    "_:N873f2e0daf764aee975560e1e002ba71",
-                    "_:N24f113fe9cad4386bbb23ba4d121f0e6",
-                    "_:N36ca7c94a8434d2c92f9950dde3655a1",
-                    "_:N7ca694408af74a328c54b2242084019d",
-                    "_:N8695526aaced4220a1bd7d0c9c6a569d",
-                    "_:Nfab2e2dad8194d469cda512357434658",
-                    "_:Na9bee232c22243fc917bbd9917d0b569",
-                    "_:N4c2012bc1f7543e9a1880eb00b6d068a",
-                    "_:Nca0aaadb70fd4aafa3ae46d801ecaaa6",
-                    "_:Ne08d40e4d2ed40c999871cdf4faa4d80",
-                    "_:N57e21ed460a749d9b0b3944711558c1e",
-                    "_:N8423266ff75047dca4635957878a63b3"
-                  ]
-                },
                 "geojson:GeometryShape": {
-                  "nodes": []
-                },
-                "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
                   "nodes": []
                 },
                 "geojson:GeometryShape/sh:or/rdf:first": {
@@ -254,45 +242,7 @@
                 }
               },
               "isError": false,
-              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:FeatureShape: _:Nd02c7f0040504be481b4ea2ca89aeedd,_:N873f2e0daf764aee975560e1e002ba71,_:N24f113fe9cad4386bbb23ba4d121f0e6,_:N36ca7c94a8434d2c92f9950dde3655a1,_:N7ca694408af74a328c54b2242084019d,_:N8695526aaced4220a1bd7d0c9c6a569d,_:Nfab2e2dad8194d469cda512357434658,_:Na9bee232c22243fc917bbd9917d0b569,_:N4c2012bc1f7543e9a1880eb00b6d068a,_:Nca0aaadb70fd4aafa3ae46d801ecaaa6,_:Ne08d40e4d2ed40c999871cdf4faa4d80,_:N57e21ed460a749d9b0b3944711558c1e,_:N8423266ff75047dca4635957878a63b3\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "source": {
-        "type": "EXAMPLE",
-        "requireFail": false,
-        "filename": "build/tests/focal/myFeature/example_1_2.yaml",
-        "url": "https://markuswilhelmjahn.github.io/bblock-systems/build/tests/focal/myFeature/example_1_2.yaml",
-        "exampleIndex": 1,
-        "snippetIndex": 2,
-        "language": "application/x-yaml"
-      },
-      "result": false,
-      "sections": [
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using example_1_2.yaml from examples"
-            }
-          ]
-        },
-        {
-          "name": "JSON_SCHEMA",
-          "title": "JSON Schema",
-          "entries": [
-            {
-              "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'LT' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'LT' is a required property\n\nFailed validating 'required' in schema[0]['allOf'][1]['properties']['properties']:\n    {'$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'description': 'My example schema',\n     'properties': {'CHS': {'type': 'number',\n                            'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniCHS'},\n                    'DS_OPRL': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniDSOPRL'},\n                    'ID1': {'type': 'number',\n                            'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniID1'},\n                    'LES_OBL': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOblast'},\n                    'LO_CAST': {'type': 'string',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOblastCast'},\n                    'LT': {'type': 'string',\n                           'x-jsonld-base': 'https://w3id.org/ogc/hosted/focal/lt/',\n                           'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniTyp',\n                           'x-jsonld-type': '@id'},\n                    'OVER_T': {'type': 'string',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniOVERT'},\n                    'PCHS': {'type': 'string',\n                             'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniPCHS'},\n                    'PLOCHA': {'type': 'number',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniPLOCHA'},\n                    'ROK_MAP': {'type': 'number',\n                                'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniROKMAP'},\n                    'SLT': {'type': 'string',\n                            'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniSLT'},\n                    'UDRZBA': {'type': 'number',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniUDRZBA'},\n                    'ZADOST': {'type': 'string',\n                               'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniZADOST'},\n                    'ZMENA': {'type': 'string',\n                              'x-jsonld-id': 'https://w3id.org/ogc/hosted/focal/properties/lesniZMENA'}},\n     'required': ['LT'],\n     'type': 'object',\n     'x-jsonld-prefixes': {'focal-prop': 'https://w3id.org/ogc/hosted/focal/properties/'}}\n\nOn instance['properties']:\n    {'a': 'mynamespace:aThing', 'b': 23, 'c': 0.1}"
+              "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:FeatureShape: _:Ne07bd7b7da774e408c402802d4c03c8d\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n"
             }
           ]
         }
@@ -301,8 +251,8 @@
   ],
   "globalErrors": {},
   "counts": {
-    "total": 3,
-    "passed": 1,
-    "failed": 2
+    "total": 2,
+    "passed": 2,
+    "failed": 0
   }
 }

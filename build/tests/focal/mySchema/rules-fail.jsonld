@@ -1,5 +1,5 @@
 {
-  "@context": "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld",
+  "@context": "https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld",
   "LES_OBL": 8,
   "LO_CAST": "a",
   "UDRZBA": 2022,

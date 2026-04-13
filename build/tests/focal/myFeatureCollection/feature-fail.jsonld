@@ -1,5 +1,5 @@
 {
-  "@context": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld",
+  "@context": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/context.jsonld",
   "type": "FeatureCollection",
   "name": "example_data",
   "crs": {

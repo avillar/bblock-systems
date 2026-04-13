@@ -3,7 +3,7 @@
     {
       "mynamespace": "http://example.com/mythings/"
     },
-    "https://markuswilhelmjahn.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld"
+    "https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld"
   ],
   "LT": "2S1",
   "LES_OBL": 8,

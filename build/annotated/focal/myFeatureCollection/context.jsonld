@@ -2,24 +2,12 @@
   "@context": {
     "type": "@type",
     "features": {
-      "@context": {
-        "id": "@id",
-        "geometry": {
-          "@context": {
-            "coordinates": {
-              "@id": "geojson:coordinates",
-              "@container": "@list"
-            }
-          },
-          "@id": "geojson:geometry"
-        },
-        "bbox": {
-          "@id": "geojson:bbox",
-          "@container": "@list"
-        }
-      },
       "@id": "geojson:features",
       "@container": "@set"
+    },
+    "bbox": {
+      "@id": "geojson:bbox",
+      "@container": "@list"
     },
     "links": {
       "@context": {
@@ -51,11 +39,41 @@
     "MultiPolygon": "geojson:MultiPolygon",
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
+    "id": "@id",
+    "geometry": {
+      "@context": {
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
+      },
+      "@id": "geojson:geometry"
+    },
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "geojson": "https://purl.org/geojson/vocab#",
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
     "focal-prop": "https://w3id.org/ogc/hosted/focal/properties/",
+    "LT": {
+      "@context": {
+        "@base": "https://w3id.org/ogc/hosted/focal/lt/"
+      },
+      "@id": "focal-prop:lesniTyp",
+      "@type": "@id"
+    },
+    "LES_OBL": "focal-prop:lesniOblast",
+    "LO_CAST": "focal-prop:lesniOblastCast",
+    "UDRZBA": "focal-prop:lesniUDRZBA",
+    "ZMENA": "focal-prop:lesniZMENA",
+    "ZADOST": "focal-prop:lesniZADOST",
+    "CHS": "focal-prop:lesniCHS",
+    "PCHS": "focal-prop:lesniPCHS",
+    "OVER_T": "focal-prop:lesniOVERT",
+    "ROK_MAP": "focal-prop:lesniROKMAP",
+    "ID1": "focal-prop:lesniID1",
+    "SLT": "focal-prop:lesniSLT",
+    "PLOCHA": "focal-prop:lesniPLOCHA",
+    "DS_OPRL": "focal-prop:lesniDSOPRL",
     "@version": 1.1
   }
 }

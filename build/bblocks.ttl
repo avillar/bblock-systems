@@ -2,8 +2,8 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.w3.org/ns/oa#> .
-@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix ns2: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -21,12 +21,12 @@
     rdfs:label "FOCAL Ontology" ;
     dct:abstract "RDF contents for the FOCAL ontology"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-04-09T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/build/generateddocs/markdown/focal/focal-ontology/index.md> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/bblock/ogc.focal.focal-ontology> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/build/generateddocs/json-full/focal/focal-ontology/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/bblock/ogc.focal.focal-ontology> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/build/generateddocs/markdown/focal/focal-ontology/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-04-13"^^xsd:date ;
     skos:inScheme <https://avillar.github.io/bblock-systems/> ;
@@ -51,10 +51,10 @@
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/bblock/ogc.focal.myFeatureCollection> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeatureCollection/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/build/generateddocs/json-full/focal/myFeatureCollection/index.json> ] ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/build/generateddocs/json-full/focal/myFeatureCollection/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/build/generateddocs/markdown/focal/myFeatureCollection/index.md> ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2026-04-13"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
@@ -73,43 +73,43 @@
             rdfs:seeAlso <bblocks://ogc.focal.myFeature> ;
             prof:hasArtifact <https://avillar.github.io/bblock-systems/_sources/myFeature/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/schema.json> ;
-            prof:hasRole role:schema ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.featureCollection> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/shapes.shacl> ;
             prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/schema.yaml> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.focal.myFeature>,
         <bblocks://ogc.geo.features.featureCollection> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
-    bblocks:validationPassed false .
+    bblocks:validationPassed true .
 
 <https://avillar.github.io/bblock-systems/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Neb383ea8e5cf4eaead770fee0edd02b5 ;
+    prov:wasAttributedTo _:Nefb7bfa9d24244d194f3a9e2fa15b275 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-04-13T12:25:46.173876"^^xsd:dateTime ;
-            prov:startedAtTime "2026-04-13T12:25:45.973869"^^xsd:dateTime ;
+            prov:endedAtTime "2026-04-13T13:00:05.330933"^^xsd:dateTime ;
+            prov:startedAtTime "2026-04-13T13:00:05.101344"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
                 [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:4229b0accf544c4d8c9c602e8ed77213e5bc6704" ;
+                    dct:hasVersion "git:3ee0e641dd9ce43bdb122e466b2dee5a49ba03c2" ;
                     rdfs:seeAlso <https://avillar.github.io/bblock-systems/build/register.json> ] ;
-            prov:wasAssociatedWith _:Neb383ea8e5cf4eaead770fee0edd02b5 ] .
+            prov:wasAssociatedWith _:Nefb7bfa9d24244d194f3a9e2fa15b275 ] .
 
 <https://example.com/sources/1> rdfs:label "Sample source document" .
 
@@ -120,12 +120,12 @@
     rdfs:label "My Schema" ;
     dct:abstract "An example schema defining the set of properties of any type of object."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/bblock/ogc.focal.mySchema> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/build/generateddocs/json-full/focal/mySchema/index.json> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/build/generateddocs/markdown/focal/mySchema/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/build/generateddocs/json-full/focal/mySchema/index.json> ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblock-systems/bblock/ogc.focal.mySchema> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-04-13"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
@@ -133,17 +133,17 @@
     skos:prefLabel "My Schema" ;
     skos:topConceptOf <https://avillar.github.io/bblock-systems/> ;
     dcat:keyword "templates" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/mySchema/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:hasSourceJsonLdContext <https://avillar.github.io/bblock-systems/_sources/mySchema/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
@@ -181,11 +181,6 @@
             dct:format "application/yaml" ;
             prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/myFeature/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://avillar.github.io/bblock-systems/build/annotated/focal/myFeature/context.jsonld> ;
@@ -194,6 +189,11 @@
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.focal.myFeature> ;
             prof:hasArtifact <https://avillar.github.io/bblock-systems/_sources/myFeature/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.focal.mySchema>,
         <bblocks://ogc.geo.features.feature> ;
@@ -212,31 +212,31 @@ As a Forest Data Provider (e.g. a forestry researcher), I want to provide my "no
 
 The FOCAL Forest Typology OGC Smart Blocks repository manages an ontology for the domain specific forest typology which is in syncronisation with an official register. The URIs of the ontology are also mapped to the data schema. This mapping ensures the consistency of the distributed forest typology digital twin and adds all the meaning which the ontology is providing.  
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-04-13T12:25:30.500735"^^xsd:dateTime ;
+    dct:modified "2026-04-13T12:59:47.929477"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://ogc.focal.focal-ontology>,
         <bblocks://ogc.focal.myFeature>,
         <bblocks://ogc.focal.myFeatureCollection>,
         <bblocks://ogc.focal.mySchema> ;
     skos:prefLabel "Building Blocks - FOCAL Forest Typology OGC Smart Blocks repository" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
-            dct:type "application/ld+json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://avillar.github.io/bblock-systems/build/bblocks.jsonld> ],
+    prof:hasResource [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://avillar.github.io/bblock-systems/build/bblocks.ttl> ],
         [ rdfs:label "This Building Blocks Register in JSON format" ;
             dct:type "application/json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://avillar.github.io/bblock-systems/build/register.json> ],
-        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
-            dct:type "text/turtle" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://avillar.github.io/bblock-systems/build/bblocks.ttl> ] ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://avillar.github.io/bblock-systems/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://avillar.github.io/bblock-systems/build/bblocks.jsonld> ] ;
     foaf:homepage <https://avillar.github.io/bblock-systems/> ;
     bblocks:hasValidationReport <https://avillar.github.io/bblock-systems/build/tests/report.html> .
 
-_:Neb383ea8e5cf4eaead770fee0edd02b5 a prov:Agent,
+_:Nefb7bfa9d24244d194f3a9e2fa15b275 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.5.27" ;
+    dct:hasVersion "0.5.28" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 

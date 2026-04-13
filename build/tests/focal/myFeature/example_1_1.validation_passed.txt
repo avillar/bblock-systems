@@ -1,5 +1,5 @@
 Validation report for ogc.focal.myFeature - Custom Feature
-Generated 2026-04-13T12:25:32.291732+00:00
+Generated 2026-04-13T12:59:50.557841+00:00
 === Files ===
 Using ../myFeatureCollection/examples/feature.json from examples
 JSON-LD context is present - uplifting
@@ -17,18 +17,18 @@ Validation result for _sources/myFeature/shapes.shacl:
   Conforms: True
   
 Focus nodes for _sources/myFeature/shapes.shacl:
- - Shape focal-prop:FeatureCollectionShape: *none*
+ - Shape <https://example.com/focal/feature-lesniTyp>: _:N208bd4780bb543dd8416d7b4ad6cb156
 
 Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
   Validation Report
   Conforms: True
   
 Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:FeatureShape: _:Ne07bd7b7da774e408c402802d4c03c8d
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
  - Shape geojson:LinkShape: *none*
  - Shape geojson:GeometryShape: *none*
+ - Shape geojson:FeatureShape: _:N208bd4780bb543dd8416d7b4ad6cb156
  - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
 
 === End SHACL ===
 

@@ -167,12 +167,12 @@
   "name": "Building Blocks - FOCAL Forest Typology OGC Smart Blocks repository",
   "abstract": "This is an example which uses OGC Smart Blocks to define the ontology for forest typology multilingual.\n",
   "description": "### The Story\nAs a Forest Data Provider (e.g. a forestry researcher), I want to provide my \"normal GIS\" data, e.g. typology derived by photogrammetry / remote sensing, in a way that my data is conformant to my domain (multilingual) and can be integrate with data from another domain (e.g. climate projections) by defining clear input/output contracts. Following OGC Smart concepts, domain specific profiles can be provided by public registers to ensure public consistency. Using those profiles turns my local data into machine-interpretable knowledge that can be used to extend a distributed digital twin of forest typologies of my domain or can be automatically integrated into more cross-domain digital twins like climate-resilient reforestation simulations or processed by AI tools to generate climate-resilient reforestation recommendations.\n\nThe FOCAL Forest Typology OGC Smart Blocks repository manages an ontology for the domain specific forest typology which is in syncronisation with an official register. The URIs of the ontology are also mapped to the data schema. This mapping ensures the consistency of the distributed forest typology digital twin and adds all the meaning which the ontology is providing.  \n",
-  "modified": "2026-04-13T12:25:30.500735",
+  "modified": "2026-04-13T12:59:47.929477",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"a1dc57f4c633cd8555051082178e51efa6c0b2c1",
       "shortCommitId": "\"a1dc57",
-      "date": "2026-04-13T10:28:36+00:00\""
+      "date": "2026-04-13T12:56:05+00:00\""
     }
   },
   "gitRepository": "https://github.com/avillar/bblock-systems",
@@ -533,7 +533,7 @@
       "resolvedSchemaProperties": "https://avillar.github.io/bblock-systems/build/annotated/focal/myFeatureCollection/resolvedProperties.json",
       "sourceFiles": "https://avillar.github.io/bblock-systems/_sources/myFeatureCollection/",
       "rdfData": [],
-      "validationPassed": false,
+      "validationPassed": true,
       "testOutputs": "https://github.com/avillar/bblock-systems/blob/master/build/tests/focal/myFeatureCollection/",
       "transforms": [
         {

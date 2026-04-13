@@ -3,13 +3,13 @@
 @prefix focal-prop: <https://w3id.org/ogc/hosted/focal/properties/> .
 @prefix geojson:  <https://purl.org/geojson/vocab#> .
 
-focal-prop:FeatureCollectionShape
+<https://example.com/focal/feature-lesniTyp>
     a                  sh:NodeShape ;
-    sh:targetClass     geojson:FeatureCollection ;
+    sh:targetClass     geojson:Feature ;
     sh:property [
         sh:path        focal-prop:lesniTyp ;
         sh:minCount    1 ;
         sh:nodeKind    sh:IRI ;
         sh:name        "lesniTyp" ;
-        sh:message     "Every geojson:FeatureCollection must have at least one focal-prop:lesniTyp whose value is an IRI resource." ;
+        sh:message     "Every geojson:Feature must have at least one focal-prop:lesniTyp whose value is an IRI resource." ;
     ] .

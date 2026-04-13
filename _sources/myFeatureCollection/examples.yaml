@@ -22,5 +22,4 @@ examples:
     snippets:
       - language: json
         # Reference to file
-        ref: ../myFeatureCollection/examples/feature.json
-        json-path: $.features[0]
+        ref: examples/feature.json
